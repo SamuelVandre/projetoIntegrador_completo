@@ -1,4 +1,4 @@
-.cabecalho {
+header.cabecalho {
   background-color: #ffffff;
   display: flex;              /* coloca os filhos em linha */
   align-items: center;        /* centraliza verticalmente */
@@ -11,7 +11,7 @@
 }
 
 
-.cabecalho__logo-texto {
+header.cabecalho .cabecalho__logo-texto {
   font-family: var(--fonte-titulo);
   font-size: 28px;
   font-weight: 600;
@@ -19,12 +19,12 @@
   letter-spacing: 2px;
 }
 
-.cabecalho__logo img {
+header.cabecalho .cabecalho__logo img {
   height: 50px;  /* ajuste esse número até ficar do tamanho que quiser */
   width: auto;   /* mantém a proporção sem distorcer */
 }
 
-.cabecalho__nav a {
+header.cabecalho .cabecalho__nav a {
   text-decoration: none;
   color: var(--cor-texto);
   font-size: 14px;
@@ -33,11 +33,11 @@
   transition: color 0.2s;
 }
 
-.cabecalho__nav a:hover {
+header.cabecalho .cabecalho__nav a:hover {
   color: var(--cor-dourado);
 }
 
-.cabecalho__botao {
+header.cabecalho .cabecalho__botao {
   text-decoration: none;
   background-color: transparent;   /* sem fundo */
   color: var(--cor-texto);          /* texto escuro */
