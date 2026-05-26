@@ -7,29 +7,30 @@ body {
         background-color:#f3f0f0;
     }
 
-banner {
+banner1 {
     background-image: linear-gradient(rgba(149, 1, 1, 0.4), rgba(0,0,0,.40));
     background-repeat: no-repeat;
     background-position-x: center;
     background-size: cover;
     background-position-y: center;
-    position: center; 
-
+    position: center;   
     }
 
-    figure.banner {
+        figure.banner1 {
         background-image: linear-gradient(rgba(149, 1, 1, 0.4), rgba(0,0,0,.40));
         position: sticky;  
         top: 0%;
         width:100%;     
-        height: 500px;
+        height: 550p5;
         background-size: cover;
         background-position: center;  
         display: inline-block;
-        margin: auto;        
+        margin: auto;
+              
     }            
-                
-        figure.banner figcaption {
+        
+        
+        figure.banner1 figcaption {
             background-image: linear-gradient(rgba(150, 72, 72, 0.4), rgba(0,0,0,.40));
             width: 100%;
             height: 100%;            
@@ -37,10 +38,10 @@ banner {
             top: 0;
             padding: 10px;
             box-sizing: border-box; 
-            display: inline;
+            display: inline; 
         }
 
-        
+
        h1 {
        color: #f3f0f0;
        text-align: center;   
@@ -51,7 +52,7 @@ banner {
        text-shadow: 2px 2px 4px black;
        position: absolute;
        left: 50%;
-       
+       transform: translateX(-50%);
        }
 
          p {
@@ -63,7 +64,9 @@ banner {
          text-shadow: 2px 2px 4px black ;
          position: absolute;
          background-image: linear-gradient(rgba(150, 72, 72, 1), rgba(0,0,0,.80));
-         background-position: center;                       
+         background-position: center;
+         
+                         
          
          }
 
@@ -72,43 +75,15 @@ banner {
          text-align: left;
          font-family: 'Arial Black', Arial, sans-serif;
          background-image: linear-gradient(rgba(150, 72, 72, 1), rgba(0,0,0,.80));
-         font-size: 30px;
+     
+        font-size: 30px;
          text-shadow: 2px 2px 4px black;
          position: absolute;
          left: 50%;
          top: 5%;    
          }
 
-        figure.fachada {
-        position: relative;           
-        border: 8px solid white;
-        box-shadow: 1px 1px 4px black;
-        margin: 10px auto;       
-        width: 45%;
-        height: 500px; 
-        display: inline-flex;
-        }
-        
-        figure.fachada img {
-            width: 100%;
-            height: 100%;
-            background-size: cover;
-            background-position: center;            
-            position: absolute;
-                            
-        }
-        
-        figure.fachada figcaption {            
-            width: 100%;
-            height: 100%;            
-            top: 0;
-            padding: 10px;
-            box-sizing: border-box; 
-            position: absolute;
-     
-            }
-      
-        figure.projeto {
+        figure.personalizados {
         position: relative;           
         border: 8px solid white;
         box-shadow: 1px 1px 4px black;
@@ -121,16 +96,16 @@ banner {
               
         }
         
-        figure.projeto img {
+        figure.personalizados img {
             width: 100%;
             height: 100%;
             background-size: cover;
             background-position: center;            
             position: relative;
-                            
+            
         }
         
-        figure.projeto figcaption {            
+        figure.personalizados figcaption {            
             width: 100%;
             height: 100%;            
             top: 0;
@@ -139,3 +114,5 @@ banner {
             position: absolute;
      
             }
+
+        
