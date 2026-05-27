@@ -1,3 +1,9 @@
+body {
+  font-family: var(--fonte-corpo);
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+}
+
 .cabecalho {
   background-color: #ffffff;
   display: flex;              /* coloca os filhos em linha */
@@ -55,6 +61,3 @@
 .cabecalho__botao:hover {
   background-color: var(--cor-fundo)
 }
-
-
-

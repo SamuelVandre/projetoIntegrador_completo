@@ -1,7 +1,16 @@
-@import url("./components/header.css");
-
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+:root {
+  --cor-fundo: #f2ede9;         /* Bege claro do fundo */
+  --cor-dourado: #b8960c;       /* Dourado dos destaques */
+  --cor-texto: #2c2c2c;         /* Texto escuro */
+  --cor-texto-claro: #888;      /* Texto cinza */
+  --cor-rodape: #6b5e00;        /* Fundo do rodapé */
+  --cor-borda: #d9d0c7;         /* Bordas dos campos */
+  --fonte-titulo: 'Cormorant Garamond', serif;
+  --fonte-corpo: 'Montserrat', sans-serif;
 }
