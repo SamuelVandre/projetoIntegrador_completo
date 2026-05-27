@@ -18,7 +18,7 @@ body {
 
 
 .cabecalho__logo-texto {
-  font-family: var(--fonte-titulo);
+  font-family: var(--fonte-titulo) !important;
   font-size: 28px;
   font-weight: 600;
   color: var(--cor-texto);
@@ -32,10 +32,10 @@ body {
 
 .cabecalho__nav a {
   text-decoration: none;
-  color: var(--cor-texto);
-  font-size: 14px;
+  color: var(--cor-texto) !important;
+  font-size: 14px !important;
   margin-left: 32px;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.5px !important;
   transition: color 0.2s;
 }
 
