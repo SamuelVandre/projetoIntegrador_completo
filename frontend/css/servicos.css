@@ -6,30 +6,13 @@
 @import url(./global.css);
 @import url(./components/header.css);
 
-:root {
-  --cor-fundo: #f2ede9;
-  --cor-dourado: #b8960c;
-  --cor-texto: #2c2c2c;
-  --cor-texto-claro: #888;
-  --cor-rodape: #6b5e00;
-  --cor-borda: #d9d0c7;
-  --fonte-titulo: 'Cormorant Garamond', serif;
-  --fonte-corpo: 'Montserrat', sans-serif;
-}
-
-/* ── RESET BASE ──────────────────────────── */
-*, *::before, *::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: var(--fonte-corpo);
+  /* font-family: var(--fonte-corpo); */
   background-color: var(--cor-fundo);
   color: var(--cor-texto);
 }
@@ -43,56 +26,6 @@ img {
 a {
   text-decoration: none;
   color: inherit;
-}
-
-/* ── CABEÇALHO ───────────────────────────── */
-.cabecalho {
-  background-color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 16px 40px;
-  border-bottom: 1px solid var(--cor-borda);
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-.cabecalho__logo img {
-  height: 50px;
-  width: auto;
-}
-
-.cabecalho__nav a {
-  text-decoration: none;
-  color: var(--cor-texto);
-  font-size: 14px;
-  margin-left: 32px;
-  letter-spacing: 0.5px;
-  transition: color 0.2s;
-}
-
-.cabecalho__nav a:hover,
-.cabecalho__nav--ativo {
-  color: var(--cor-dourado);
-}
-
-.cabecalho__botao {
-  text-decoration: none;
-  background-color: transparent;
-  color: var(--cor-texto);
-  font-size: 12px;
-  font-family: var(--fonte-corpo);
-  font-weight: 600;
-  letter-spacing: 1.5px;
-  padding: 10px 22px;
-  border: 1px solid var(--cor-texto);
-  cursor: pointer;
-  transition: background-color 0.2s, color 0.2s;
-}
-
-.cabecalho__botao:hover {
-  background-color: var(--cor-fundo);
 }
 
 /* ── HERO ────────────────────────────────── */
