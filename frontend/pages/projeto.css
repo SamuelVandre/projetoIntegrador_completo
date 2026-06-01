@@ -8,21 +8,17 @@ body {
  
   banner {
     background-image: linear-gradient(rgba(149, 1, 1, 0.4), rgba(0,0,0,.40));
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-size: cover;
-    background-position-y: center;
+    background-repeat: no-repeat;   
+    background-size: cover;    
     position: center;
-    height: auto;
-    }
+    height: 80%;
+        }
    
        figure.banner {
         background-image: linear-gradient(rgba(149, 1, 1, 0.4), rgba(0,0,0,.40));
-        position: static;  
         top: 0%;
-        width:100%;     
+        width:80%;     
         height: 100px;
-        background-size: cover;
         background-position: center;  
         display: inline-block;
         margin: 0;              
