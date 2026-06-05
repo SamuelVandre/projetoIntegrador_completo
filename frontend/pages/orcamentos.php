@@ -10,22 +10,9 @@
 
 <body>
 
-    <header class="cabecalho">
-    <div class="cabecalho__logo">
-       <img src="../assets/icons/image-removebg-preview (1).png" alt="">
-    </div>
-
-    <nav class="cabecalho__nav">
-      <a href="home.html">Home</a>
-      <a href="projeto.html">Projetos</a>
-      <a href="servicos.html">Serviços</a>
-      <a href="sobre.html">Sobre</a>
-    </nav>
-
-    <a href="orcamentos.html" class="cabecalho__botao">Solicitar</a>
-
-    
-  </header>
+  <?php
+    include_once('../components/header.php');
+  ?>
   
 
   <main class="pagina-principal">
@@ -81,34 +68,9 @@
     </div>
   </main>
 
-
-  <footer class="rodape">
-    <div class="rodape__conteudo">
-
-      <div class="rodape__contatos">
-        <p class="rodape__titulo">Contatos:</p>
-        <p>exemplo@email.com</p>
-        <p>(19) 1001010101</p>
-        <p>(endereço)</p>
-      </div>
-
-      <div class="rodape__redes">
-
-        <p class="rodape__titulo">Redes Sociais:</p>
-        <div class="rodape__links">
-          <a href="https://www.linkedin.com/in/arq-nayaraleal/">LinkedIn</a>
-          <a href="https://www.instagram.com/arquitetanayaraleal/">Instagram</a>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="rodape__base">
-      <p>Copyright © 2026 – Nayara Leal Arquitetura – Todos os direitos reservados</p>
-      <a href="https://www.gov.br/mdh/pt-br/acesso-a-informacao/politica-de-privacidade">Políticas de Privacidade</a>
-    </div>
-  </footer>
-
+  <?php
+    include_once('../components/footer.php');
+  ?>
 
 </body>
 </html>

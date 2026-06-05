@@ -5,27 +5,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nayara Leal</title>
-    <link rel="stylesheet" href="/projetoIntegrador_completo/frontend/css/home.css">
+    <link rel="stylesheet" href="./frontend/css/home.css">
 </head>
 
 <body>
 
-    <header class="cabecalho">
-        <div class="cabecalho__logo">
-            <img src="/projetoIntegrador_completo/frontend/assets/icons/image-removebg-preview (1).png" alt="">
-        </div>
-
-        <nav class="cabecalho__nav">
-            <a href="/projetoIntegrador_completo/frontend/pages/home.html">Home</a>
-            <a href="/projetoIntegrador_completo/frontend/pages/projeto.html">Projetos</a>
-            <a href="/projetoIntegrador_completo/frontend/pages/servicos.html">Serviços</a>
-            <a href="/projetoIntegrador_completo/frontend/pages/sobre.html">Sobre</a>
-        </nav>
-
-        <a href="orcamentos.html" class="cabecalho__botao">Solicitar</a>
-
-
-    </header>
+    <?php
+    // importa e exibe o header
+    include_once('./frontend/components/header.php');
+    ?>
 
     <section class="hero">
 
@@ -34,7 +22,7 @@
 
         <div class="hero-overlay">
 
-            <img class="hero-person" src="/projetoIntegrador_completo/frontend/assets/images/nayarapng.png">
+            <img class="hero-person" src="./frontend/assets/images/nayarapng.png">
 
             <div class="hero-text">
                 <h1>Nayara Leal</h1>
@@ -42,7 +30,7 @@
 
                 <div class="ornament"></div>
 
-                <button class="hero-btn">Solicite orçamento</button>
+                <button class="hero-btn" onclick="window.location.href='/frontend/pages/orcamentos.php'">Solicitar orçamento</button>
             </div>
 
         </div>
@@ -99,7 +87,7 @@
                 <div class="video-top">@arquitetanayaraleal</div>
 
                 <video autoplay loop controls>
-                    <source src="/projetoIntegrador_completo/frontend/assets/videos/instavideo.mp4" type="video/mp4">
+                    <source src="./frontend/assets/videos/instavideo.mp4" type="video/mp4">
                 </video>
             </div>
 
@@ -120,17 +108,17 @@
                 <div class="comments">
 
                     <div class="comment">
-                        <strong>@epramim_</strong>
+                        <strong>@usuario1</strong>
                         <p>É verdade! Seu imóvel será mais valorizado 👏👏</p>
                     </div>
 
                     <div class="comment">
-                        <strong>@personal.milena</strong>
+                        <strong>@usuario2</strong>
                         <p>Não sabia dessa importância! Amei o conteúdo 😍</p>
                     </div>
 
                     <div class="comment">
-                        <strong>@suyarq_</strong>
+                        <strong>@usuario3</strong>
                         <p>A contratação de um arquiteto faz toda diferença ❤️</p>
                     </div>
 
@@ -179,11 +167,11 @@
 
     </div>
 
-    <footer>
-        © 2026 - Nayara Leal Arquitetura
-    </footer>
+    <?php
+        include_once('./frontend/components/footer.php');
+    ?>
 
-    <script type="module" src="../js/home.js"></script>
+    <script type="module" src="/frontend/js/home.js"></script>
 </body>
 
 </html>

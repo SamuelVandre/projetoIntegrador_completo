@@ -13,21 +13,9 @@
 
 <body>
 
-  <header class="cabecalho">
-        <div class="cabecalho__logo">
-            <img src="../assets/icons/image-removebg-preview (1).png" alt="Logo da empresa">
-        </div>
-
-        <nav class="cabecalho__nav">
-            <a href="home.html">Home</a>
-            <a href="projeto.html">Projetos</a>
-            <a href="servicos.html">Serviços</a>
-            <a href="sobre.html">Sobre</a>
-        </nav>
-
-        <a href="orcamentos.html" class="cabecalho__botao">Solicitar</a>
-    </header>
-
+  <?php
+    include_once('../components/header.php');
+  ?>
 
   <!-- HERO -->
   <section class="hero">

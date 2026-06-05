@@ -69,6 +69,7 @@ function openModal(index) {
     updateCarousel()
 
     modal.classList.add('active')
+    modal.style.display = 'flex';
 
     document.body.classList.add('modal-open')
 

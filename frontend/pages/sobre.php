@@ -15,33 +15,9 @@
 
 <body>
 
- <header class="header">
-  <div class="container nav-container">
-
-    <div class="logo">
-      <img src="../assets/icons/image-removebg-preview (1).png" alt="Logo Arquitetura">
-    </div>
-
-    <!-- BOTÃO HAMBURGUER -->
-    <button class="menu-toggle" id="menu-toggle">
-      ☰
-    </button>
-
-    <nav class="nav" id="nav">
-      <ul class="nav-list">
-        <li><a href="#">Home</a></li>
-        <li><a href="">Sobre</a></li>
-        <li><a href="#">Projetos</a></li>
-        <li><a href="#">Serviços</a></li>
-      </ul>
-
-    </nav>
-
-    <!-- BOTÃO DESKTOP -->
-    <a href="#" class="btn-outline desktop-btn">SOLICITAR</a>
-
-  </div>
-</header>
+ <?php
+    include_once('../components/header.php');
+  ?>
 
   <!-- HERO -->
   <section class="hero">
@@ -82,14 +58,10 @@
 
     </div>
   </section>
-<script>
-  const menuToggle = document.getElementById('menu-toggle');
-  const nav = document.getElementById('nav');
 
-  menuToggle.addEventListener('click', () => {
-    nav.classList.toggle('active');
-  });
-</script>
+  <?php
+    include_once('../components/footer.php');
+  ?>
 </body>
 
 </html>

@@ -1,16 +1,10 @@
-body {
-  font-family: var(--fonte-corpo);
-  background-color: var(--cor-fundo);
-  color: var(--cor-texto);
-}
-
 .cabecalho {
-  background-color: #ffffff;
+  background-color: var(--cor-rodapeheader);
   display: flex;              /* coloca os filhos em linha */
   align-items: center;        /* centraliza verticalmente */
   justify-content: space-between; /* espaço entre logo, nav e botão */
   padding: 16px 40px;
-  border-bottom: 1px solid var(--cor-borda);
+  border-bottom: 1px solid #0000001c;
   position: sticky;           /* fica fixo no topo ao rolar */
   top: 0;
   z-index: 100;
@@ -52,12 +46,16 @@ body {
   font-weight: 600;
   letter-spacing: 1.5px;
   padding: 10px 22px;
-  border: 1px solid var(--cor-texto); /* só a borda */
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--cor-borda);
+  border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.2s, color 0.2s;
 }
 
 
 .cabecalho__botao:hover {
-  background-color: var(--cor-fundo)
+  color: #ffffffff;
+  background-color: var(--cor-dourado);
+  border-color: var(--cor-dourado);
 }

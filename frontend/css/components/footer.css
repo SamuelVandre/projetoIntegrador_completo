@@ -1,5 +1,7 @@
+
+
 .rodape {
-  background-color: var(--cor-rodape);
+  background-color: var(--cor-rodapeheader);
   color: #f0e8c8;
   padding: 48px 40px 24px;
 }
@@ -22,7 +24,7 @@
 .rodape__redes p {
   font-size: 13px;
   line-height: 1.8;
-  color: #d4c98a;
+  color: var(--cor-texto);
 }
 
 .rodape__links {
@@ -31,14 +33,14 @@
 }
 
 .rodape__links a {
-  color: #d4c98a;
+  color: var(--cor-texto);
   text-decoration: none;
   font-size: 13px;
   transition: color 0.2s;
 }
 
 .rodape__links a:hover {
-  color: #ffffff;
+  color: var(--cor-dourado);
 }
 
 .rodape__base {
@@ -53,12 +55,12 @@
 .rodape__base p,
 .rodape__base a {
   font-size: 12px;
-  color: #b09f50;
+  color: var(--cor-texto);
   text-decoration: none;
 }
 
 .rodape__base a:hover {
-  color: #ffffff;
+  color: var(--cor-dourado);
 }
 
 
