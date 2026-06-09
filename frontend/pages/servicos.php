@@ -288,45 +288,8 @@
     <a href="orcamentos.php" class="cta__botao">SOLICITAR ORÇAMENTO</a>
   </section>
 
-
-<<<<<<< HEAD
-  <!-- ------------------------------------------
-       RODAPÉ (FOOTER)
-       Informações de contato, redes e copyright
-       ------------------------------------------ -->
-  <footer class="rodape">
-    <div class="rodape__conteudo">
-
-      <!-- Coluna: Informações de Contato -->
-      <div class="rodape__contatos">
-        <p class="rodape__titulo">Contatos:</p>
-        <p>exemplo@email.com</p>
-        <p>(19) 1001010101</p>
-        <p>Avenida Exemplo, 123 - Campinas/SP</p>
-      </div>
-
-      <!-- Coluna: Links Sociais -->
-      <div class="rodape__redes">
-        <p class="rodape__titulo">Redes Sociais:</p>
-        <div class="rodape__links">
-          <a href="https://www.linkedin.com/in/arq-nayaraleal/" target="_blank">LinkedIn</a>
-          <a href="https://www.instagram.com/arquitetanayaraleal/" target="_blank">Instagram</a>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Barra Inferior: Copyright e Legal -->
-    <div class="rodape__base">
-      <p>Copyright © 2026 – Nayara Leal Arquitetura – Todos os direitos reservados</p>
-      <a href="#">Políticas de Privacidade</a>
-    </div>
-  </footer>
-=======
   <?php
     include_once('../components/footer.php'); 
-  ?>
->>>>>>> 1b54f3300a60b1a58a1a9f267e48d1f8dc0c48b1
-
+  ?>,
 </body>
 </html>

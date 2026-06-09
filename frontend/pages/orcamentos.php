@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8"> <!-- Define a codificação de caracteres para suportar acentos e símbolos -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta a largura do site ao tamanho da tela do dispositivo -->
-  <title>Orçamentos</title> <!-- Define o título que aparece na aba do navegador -->
+  <title>Orçamentos | Nayara Leal Arquitetura</title> <!-- Define o título que aparece na aba do navegador -->
   <link rel="stylesheet" href="../css/orcamentos.css"> <!-- Conecta o arquivo CSS externo para dar estilo à página -->
   <link rel="shortcut icon" href="../assets/icons/icone.png" type="image/x-icon"> <!-- Define o ícone (favicon) da aba do navegador -->
 </head>
