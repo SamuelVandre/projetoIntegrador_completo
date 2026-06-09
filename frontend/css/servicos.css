@@ -1,18 +1,22 @@
-/* =========================================
-   servicos.css — Nayara Leal Arquitetura
-   Padrão do projeto: BEM + variáveis CSS
-   ========================================= */
-
+/* ==========================================
+   IMPORTS
+   Puxa o global.css (variáveis, reset) e os
+   estilos do header incluídos via PHP/HTML
+   ========================================== */
 @import url(./global.css);
 @import url(./components/header.css);
 
 
+/* ------------------------------------------
+   CONFIGURAÇÕES GERAIS
+   Comportamentos base para tags globais da 
+   página de serviços
+   ------------------------------------------ */
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth; /* Rolagem suave para links âncora */
 }
 
 body {
-  /* font-family: var(--fonte-corpo); */
   background-color: var(--cor-fundo);
   color: var(--cor-texto);
 }
@@ -28,7 +32,12 @@ a {
   color: inherit;
 }
 
-/* ── HERO ────────────────────────────────── */
+
+/* ------------------------------------------
+   <section class="hero">
+   Banner principal de impacto com imagem de 
+   fundo e texto alinhado à base
+   ------------------------------------------ */
 .hero {
   position: relative;
   height: 92vh;
@@ -39,6 +48,7 @@ a {
   padding-bottom: 80px;
 }
 
+/* Camada escura sobre a imagem para dar leitura ao texto */
 .hero__overlay {
   position: absolute;
   inset: 0;
@@ -82,6 +92,7 @@ a {
   line-height: 1.7;
 }
 
+/* Botão branco que inverte para dourado no hover */
 .hero__botao {
   display: inline-block;
   font-size: 12px;
@@ -98,7 +109,12 @@ a {
   color: #ffffff;
 }
 
-/* ── INTRO ───────────────────────────────── */
+
+/* ------------------------------------------
+   <section class="intro">
+   Bloco de texto e imagem lateral (Lado a Lado)
+   Explicando o conceito do escritório
+   ------------------------------------------ */
 .intro {
   display: flex;
   align-items: center;
@@ -111,6 +127,7 @@ a {
   flex: 1;
 }
 
+/* Detalhe visual: linha dourada decorativa */
 .intro__linha {
   width: 36px;
   height: 2px;
@@ -141,6 +158,7 @@ a {
   max-width: 560px;
 }
 
+/* Efeito de zoom suave na imagem ao passar o mouse */
 .intro__imagem img {
   height: 100%;
   transition: transform 0.5s ease;
@@ -150,7 +168,11 @@ a {
   transform: scale(1.04);
 }
 
-/* ── SERVIÇOS ────────────────────────────── */
+
+/* ------------------------------------------
+   <section class="servicos">
+   Grid principal exibindo os tipos de projetos
+   ------------------------------------------ */
 .servicos {
   padding: 90px 6%;
   background-color: var(--cor-fundo);
@@ -181,6 +203,7 @@ a {
   margin: 0 auto 52px;
 }
 
+/* Grid de 3 colunas que se ajusta no responsivo */
 .servicos__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -189,7 +212,12 @@ a {
   margin: 0 auto;
 }
 
-/* ── CARD DE SERVIÇO ─────────────────────── */
+
+/* ------------------------------------------
+   <article class="servico-card">
+   Card individual com imagem, ícone flutuante
+   e descrição do serviço
+   ------------------------------------------ */
 .servico-card {
   background-color: #ffffff;
   text-align: center;
@@ -217,6 +245,7 @@ a {
   transform: scale(1.06);
 }
 
+/* Círculo branco com o ícone dourado centralizado */
 .servico-card__icone {
   position: absolute;
   bottom: -18px;
@@ -257,7 +286,12 @@ a {
   line-height: 1.75;
 }
 
-/* ── BANNER ──────────────────────────────── */
+
+/* ------------------------------------------
+   <section class="banner">
+   Bloco de destaque com fundo em cor de borda
+   e imagem ocupando 100% da altura da div
+   ------------------------------------------ */
 .banner {
   display: flex;
   background-color: var(--cor-borda);
@@ -304,7 +338,11 @@ a {
   max-width: 420px;
 }
 
-/* ── PROCESSO ────────────────────────────── */
+
+/* ------------------------------------------
+   <section class="processo">
+   Exibição das etapas da metodologia de trabalho
+   ------------------------------------------ */
 .processo {
   padding: 90px 6%;
   background-color: #ffffff;
@@ -342,7 +380,11 @@ a {
   gap: 0;
 }
 
-/* ── ETAPA ───────────────────────────────── */
+
+/* ------------------------------------------
+   <div class="etapa">
+   Cada passo individual do processo criativo
+   ------------------------------------------ */
 .etapa {
   display: flex;
   flex-direction: column;
@@ -363,9 +405,10 @@ a {
   justify-content: center;
   color: var(--cor-dourado);
   border: 1.5px solid var(--cor-borda);
-  transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+  transition: all 0.2s;
 }
 
+/* Inverte as cores do ícone no hover da etapa */
 .etapa:hover .etapa__icone {
   background-color: var(--cor-dourado);
   border-color: var(--cor-dourado);
@@ -391,6 +434,7 @@ a {
   line-height: 1.6;
 }
 
+/* Linha conectora entre as bolinhas das etapas */
 .etapa__conector {
   flex: 1;
   min-width: 28px;
@@ -400,7 +444,12 @@ a {
   margin-top: 29px;
 }
 
-/* ── CTA ─────────────────────────────────── */
+
+/* ------------------------------------------
+   <section class="cta">
+   Call to Action (Chamada para ação) final
+   com cores mais escuras/nobres
+   ------------------------------------------ */
 .cta {
   background-color: var(--cor-rodape);
   padding: 90px 6%;
@@ -419,7 +468,7 @@ a {
   font-family: var(--fonte-titulo);
   font-size: clamp(1.8rem, 3.5vw, 3rem);
   font-weight: 300;
-  color: #f0e8c8;
+  color: #f0e8c8; /* Tom creme/dourado claro */
   line-height: 1.2;
   margin-bottom: 14px;
 }
@@ -438,7 +487,7 @@ a {
   color: var(--cor-texto);
   background-color: #ffffff;
   padding: 14px 36px;
-  transition: background-color 0.2s, color 0.2s;
+  transition: all 0.2s;
 }
 
 .cta__botao:hover {
@@ -446,7 +495,11 @@ a {
   color: #ffffff;
 }
 
-/* ── RODAPÉ ──────────────────────────────── */
+
+/* ------------------------------------------
+   <footer class="rodape">
+   Estrutura final do site com contatos e links
+   ------------------------------------------ */
 .rodape {
   background-color: var(--cor-rodape);
   color: #f0e8c8;
@@ -481,7 +534,6 @@ a {
 
 .rodape__links a {
   color: #d4c98a;
-  text-decoration: none;
   font-size: 13px;
   transition: color 0.2s;
 }
@@ -490,6 +542,7 @@ a {
   color: #ffffff;
 }
 
+/* Parte inferior: Copyright e créditos */
 .rodape__base {
   border-top: 1px solid var(--cor-borda);
   padding-top: 20px;
@@ -503,14 +556,19 @@ a {
 .rodape__base a {
   font-size: 12px;
   color: #b09f50;
-  text-decoration: none;
 }
 
 .rodape__base a:hover {
   color: #ffffff;
 }
 
-/* ── RESPONSIVO ──────────────────────────── */
+
+/* ------------------------------------------
+   RESPONSIVIDADE (MEDIA QUERIES)
+   Ajustes de layout para diferentes telas
+   ------------------------------------------ */
+
+/* Tablets e Telas Médias */
 @media (max-width: 960px) {
   .servicos__grid {
     grid-template-columns: repeat(2, 1fr);
@@ -532,19 +590,17 @@ a {
   }
 }
 
+/* Smartphones e Dispositivos Pequenos */
 @media (max-width: 680px) {
-  .cabecalho {
-    padding: 16px 20px;
-  }
-
   .cabecalho__nav {
-    display: none;
+    display: none; /* Esconde menu padrão */
   }
 
   .servicos__grid {
     grid-template-columns: 1fr;
   }
 
+  /* Muda o fluxo das etapas de horizontal para vertical */
   .processo__etapas {
     flex-direction: column;
     align-items: center;
@@ -565,9 +621,5 @@ a {
 
   .hero__conteudo {
     padding: 0 6%;
-  }
-
-  .rodape {
-    padding: 40px 20px 24px;
   }
 }

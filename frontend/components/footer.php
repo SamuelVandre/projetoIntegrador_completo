@@ -23,4 +23,7 @@
     <p>Copyright © 2026 – Nayara Leal Arquitetura – Todos os direitos reservados</p>
     <a href="https://www.gov.br/mdh/pt-br/acesso-a-informacao/politica-de-privacidade">Políticas de Privacidade</a>
   </div>
+
+  
+  
 </footer>

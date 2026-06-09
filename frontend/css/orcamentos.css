@@ -1,131 +1,193 @@
-@import url(./global.css);
-@import url(./components/header.css);
-@import url(./components/footer.css);
+/* ==============================================================
+   IMPORTS: Carrega os estilos globais e de componentes
+   ============================================================== */
+@import url(./global.css);             /* Variáveis, fontes e reset geral */
+@import url(./components/header.css);  /* Estilos específicos do cabeçalho */
+@import url(./components/footer.css);  /* Estilos específicos do rodapé */
 
+/* ==============================================================
+   LAYOUT DA PÁGINA PRINCIPAL
+   ============================================================== */
 .pagina-principal {
-  min-height: 80vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;    
-  padding: 60px 20px;
+  min-height: 80vh;           /* Garante que a página ocupe pelo menos 80% da altura da tela */
+  display: flex;              /* Ativa o modo de caixa flexível */
+  justify-content: center;    /* Centraliza o formulário horizontalmente */
+  align-items: center;        /* Centraliza o formulário verticalmente */
+  padding: 60px 20px;         /* Espaçamento interno para não grudar nas bordas em telas pequenas */
 }
 
+/* Container do Formulário (Card Branco) */
 .formulario-container {
-  background-color: #ffffff;
-  max-width: 640px;         
-  width: 100%;
-  padding: 50px 48px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.07); 
+  background-color: #ffffff;  /* Define a cor de fundo como branco */
+  max-width: 640px;           /* Define a largura máxima do formulário */
+  width: 100%;                /* Permite que ele ocupe 100% da largura em telas menores */
+  padding: 50px 48px;         /* Espaçamento interno entre a borda e o conteúdo */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.07); /* Aplica uma sombra leve e moderna */
 }
 
+/* ==============================================================
+   TIPOGRAFIA E TEXTOS
+   ============================================================== */
 .subtitulo {
-  font-family: var(--fonte-corpo);
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 2.5px;
-  color: var(--cor-dourado);
-  margin-bottom: 10px;
-  align-items: center;
-  ;
+  font-family: var(--fonte-corpo); /* Usa a fonte definida nas variáveis globais */
+  font-size: 12px;                 /* Tamanho pequeno para o subtítulo */
+  font-weight: 600;                /* Estilo de fonte semi-negrito */
+  letter-spacing: 2.5px;           /* Aumenta o espaço entre as letras */
+  color: var(--cor-dourado);       /* Define a cor dourada principal */
+  margin-bottom: 10px;             /* Espaço abaixo do subtítulo */
+  text-align: center;              /* Centraliza o texto */
 }
 
 .titulo {
-  font-family: var(--fonte-titulo);
-  font-size: 38px;
-  font-weight: 400;
-  color: var(--cor-texto);
-  margin-bottom: 10px;
-  line-height: 1.2;
+  font-family: var(--fonte-titulo); /* Usa a fonte serifada para o título */
+  font-size: 38px;                  /* Tamanho grande para o título principal */
+  font-weight: 400;                 /* Peso normal para a fonte título */
+  color: var(--cor-texto);          /* Cor de texto escura padrão */
+  margin-bottom: 10px;              /* Espaço abaixo do título */
+  line-height: 1.2;                 /* Altura da linha para melhor leitura */
+  text-align: center;               /* Centraliza o título */
 }
 
 .descricao {
-  font-size: 14px;
-  color: var(--cor-texto-claro);
-  margin-bottom: 36px;
+  font-size: 14px;                  /* Tamanho de leitura confortável */
+  color: var(--cor-texto-claro);    /* Cor de texto em tom cinza */
+  margin-bottom: 36px;              /* Espaço antes de começar o formulário */
+  text-align: center;               /* Centraliza a descrição */
 }
 
+/* ==============================================================
+   ESTILOS DO FORMULÁRIO
+   ============================================================== */
 .formulario {
-  display: flex;
-  flex-direction: column;   
-  gap: 20px;                
+  display: flex;                    /* Organiza os campos um embaixo do outro */
+  flex-direction: column;           /* Define a direção da coluna */
+  gap: 20px;                        /* Espaçamento padrão entre cada campo */
 }
 
 .formulario__linha {
-  display: flex;
-  gap: 16px;
+  display: flex;                    /* Coloca os itens internos lado a lado */
+  gap: 16px;                        /* Espaço entre Nome e E-mail */
 }
 
 .formulario__linha .formulario__grupo {
-  flex: 1;
+  flex: 1;                          /* Faz com que os campos dividam o espaço igualmente */
 }
 
 .formulario__grupo {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
+  display: flex;                    /* Organiza Label e Input */
+  flex-direction: column;           /* Empilha a Label em cima do Input */
+  gap: 6px;                         /* Espaço entre a Label e o Campo */
 }
 
 .formulario__grupo label {
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 1.5px;
-  color: var(--cor-texto);
+  font-size: 11px;                  /* Tamanho pequeno para labels */
+  font-weight: 600;                 /* Labels em negrito */
+  letter-spacing: 1.5px;            /* Espaçamento entre letras para estética */
+  color: var(--cor-texto);          /* Cor escura para leitura */
 }
 
+/* Estilo para Inputs, Textarea e Select */
 .formulario__grupo input,
 .formulario__grupo textarea,
 .formulario__grupo select {
-  width: 100%;
-  padding: 12px 14px;
-  font-family: var(--fonte-corpo);
-  font-size: 14px;
-  color: var(--cor-texto);
-  background-color: #ffffff;
-  border: 1px solid var(--cor-borda);
-  outline: none;            
-  transition: border-color 0.2s;
+  width: 100%;                      /* Ocupa toda a largura do grupo */
+  padding: 12px 14px;               /* Espaço interno para o texto não encostar na borda */
+  font-family: var(--fonte-corpo);  /* Fonte padrão do corpo */
+  font-size: 14px;                  /* Tamanho do texto digitado */
+  color: var(--cor-texto);          /* Cor do texto digitado */
+  background-color: #ffffff;        /* Fundo branco */
+  border: 1px solid var(--cor-borda); /* Borda cinza suave */
+  outline: none;                    /* Remove a borda azul padrão do navegador */
+  transition: border-color 0.2s;    /* Transição suave ao mudar a cor da borda */
 }
 
-
+/* Efeito de foco (quando o usuário clica no campo) */
 .formulario__grupo input:focus,
 .formulario__grupo textarea:focus,
 .formulario__grupo select:focus {
-  border-color: var(--cor-dourado);
+  border-color: var(--cor-dourado); /* Muda a cor da borda para dourado */
 }
 
-.formulario__grupo input::placeholder,
-.formulario__grupo textarea::placeholder {
-  color: #bbb;
-}
-
-.formulario__grupo textarea {
-  resize: vertical;         
-}
-
-.formulario__select-wrapper {
-  position: relative;
-}
-
-.formulario__select-wrapper select {
-  appearance: none;         
-  cursor: pointer;
-}
-
+/* Estilo do botão de envio */
 .formulario__botao {
-  width: 100%;
-  padding: 16px;
-  background-color: var(--cor-dourado);
-  color: #ffffff;
-  font-family: var(--fonte-corpo);
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 2px;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.2s;
-  margin-top: 8px;
+  width: 100%;                      /* Botão ocupa a largura total do card */
+  padding: 16px;                    /* Botão alto e fácil de clicar */
+  background-color: var(--cor-dourado); /* Fundo dourado */
+  color: #ffffff;                   /* Texto em branco */
+  font-family: var(--fonte-corpo);  /* Fonte do corpo */
+  font-size: 13px;                  /* Tamanho do texto */
+  font-weight: 600;                 /* Texto em negrito */
+  letter-spacing: 2px;              /* Espaçamento entre letras */
+  border: none;                     /* Remove bordas padrão */
+  cursor: pointer;                  /* Muda o mouse para a "mãozinha" de link */
+  transition: background-color 0.2s; /* Transição suave na cor de fundo */
+  margin-top: 8px;                  /* Espaço extra acima do botão */
 }
 
 .formulario__botao:hover {
-  background-color: #cf7d9a;
+  background-color: #cf7d9a;        /* Muda para tom rosé ao passar o mouse */
+}
+
+/* ==============================================================
+   BOTÃO WHATSAPP FIXO (ESTILO CLARO)
+   ============================================================== */
+.whatsapp-fixo {
+  position: fixed;                  /* Fixa o elemento na tela durante a rolagem */
+  bottom: 30px;                     /* Distância de 30px da parte inferior */
+  right: 30px;                      /* Distância de 30px da borda direita */
+  z-index: 1000;                    /* Garante que fique acima de todos os outros elementos */
+}
+
+.whatsapp-fixo a {
+  background-color: #25d366;        /* Cor verde oficial do WhatsApp */
+  width: 60px;                      /* Largura total do círculo */
+  height: 60px;                     /* Altura total do círculo */
+  border-radius: 50%;               /* Arredonda as bordas em 50% para criar um círculo */
+  display: flex;                    /* Ativa flex para centralizar o ícone */
+  align-items: center;              /* Centraliza verticalmente */
+  justify-content: center;          /* Centraliza horizontalmente */
+  position: relative;               /* Necessário para posicionar o badge internamente */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* Sombra para profundidade */
+  transition: transform 0.3s;       /* Animação suave para o efeito de escala */
+}
+
+.whatsapp-fixo a:hover {
+  transform: scale(1.1);            /* Aumenta o tamanho em 10% ao passar o mouse */
+}
+
+.whatsapp-icone {
+  width: 35px;                      /* Largura do desenho do ícone */
+  height: 35px;                     /* Altura do desenho do ícone */
+}
+
+.notificacao-badge {
+  position: absolute;               /* Posiciona em relação ao link (pai) */
+  top: 0;                           /* Alinha no topo superior */
+  right: 0;                         /* Alinha no canto direito */
+  background-color: #e30613;        /* Vermelho vibrante (estilo Claro) */
+  color: white;                     /* Número na cor branca */
+  font-size: 11px;                  /* Tamanho pequeno para o número */
+  font-weight: bold;                /* Número em negrito */
+  width: 20px;                      /* Largura do pequeno círculo */
+  height: 20px;                     /* Altura do pequeno círculo */
+  border-radius: 50%;               /* Círculo perfeito */
+  display: flex;                    /* Flex para centralizar o número */
+  align-items: center;              /* Centraliza o "1" verticalmente */
+  justify-content: center;          /* Centraliza o "1" horizontalmente */
+  border: 2px solid #fff;           /* Borda branca que separa do verde */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Sombra leve no número */
+}
+
+/* ==============================================================
+   RESPONSIVIDADE (AJUSTES PARA CELULAR)
+   ============================================================== */
+@media (max-width: 480px) {
+  .whatsapp-fixo {
+    bottom: 20px;                   /* Reduz a distância do fundo no celular */
+    right: 20px;                    /* Reduz a distância da lateral no celular */
+  }
+  .whatsapp-fixo a {
+    width: 50px;                    /* Diminui o círculo no celular */
+    height: 50px;                   /* Diminui o círculo no celular */
+  }
 }
