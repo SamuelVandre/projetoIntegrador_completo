@@ -37,7 +37,7 @@
       <p class="hero__subtitulo">NAYARA LEAL ARQUITETURA</p>
       <h1 class="hero__titulo">Serviços</h1>
       <p class="hero__descricao">Transformamos ambientes em experiências sofisticadas, funcionais e atemporais.</p>
-      <a href="orcamentos.html" class="hero__botao">SOLICITAR ORÇAMENTO</a>
+      <a href="orcamentos.php" class="hero__botao">SOLICITAR ORÇAMENTO</a>
     </div>
   </section>
 
@@ -285,10 +285,11 @@
     <p class="cta__subtitulo">VAMOS CONVERSAR</p>
     <h2 class="cta__titulo">Pronto para transformar<br>seu espaço?</h2>
     <p class="cta__descricao">Entre em contato e solicite um orçamento personalizado.</p>
-    <a href="orcamentos.html" class="cta__botao">SOLICITAR ORÇAMENTO</a>
+    <a href="orcamentos.php" class="cta__botao">SOLICITAR ORÇAMENTO</a>
   </section>
 
 
+<<<<<<< HEAD
   <!-- ------------------------------------------
        RODAPÉ (FOOTER)
        Informações de contato, redes e copyright
@@ -321,6 +322,11 @@
       <a href="#">Políticas de Privacidade</a>
     </div>
   </footer>
+=======
+  <?php
+    include_once('../components/footer.php'); 
+  ?>
+>>>>>>> 1b54f3300a60b1a58a1a9f267e48d1f8dc0c48b1
 
 </body>
 </html>

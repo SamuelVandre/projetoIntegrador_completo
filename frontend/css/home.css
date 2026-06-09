@@ -25,12 +25,13 @@ img {
   inset: 0;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 0 7%;
 }
 
 .hero-person {
   width: 420px;
+  display: none;
   align-self: flex-end;
 }
 
@@ -40,7 +41,7 @@ img {
 }
 
 .hero-text h1 {
-  font-size: 6rem;
+  font-size: 4rem;
   font-weight: 300;
 }
 
@@ -93,61 +94,87 @@ img {
 }
 
 .section-title h2 {
-  font-size: 4rem;
+  font-size: 2.5rem;
   font-weight: 300;
 }
 
-.projects {
-  column-count: 3;
-  column-gap: 24px;
-  margin-bottom: 80px;
-}
-
-.project-card {
-  background: white;
-  margin-bottom: 24px;
-  border-radius: 24px;
-  overflow: hidden;
-  break-inside: avoid;
-  position: relative;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
-  cursor: pointer;
-}
-
-.project-card img {
-  width: 100%;
-  object-fit: cover;
-}
-
-.project-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.35);
-  opacity: 0;
-  transition: 0.3s;
+.servicos__grid {
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+/* ── CARD DE SERVIÇO ─────────────────────── */
+.servico-card {
+  background-color: #ffffff;
+  text-align: center;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.servico-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.11);
+}
+
+.servico-card__imagem-wrap {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+
+.servico-card__imagem-wrap img {
+  height: 100%;
+  transition: transform 0.5s ease;
+}
+
+.servico-card:hover .servico-card__imagem-wrap img {
+  transform: scale(1.06);
+}
+
+.servico-card__icone {
+  position: absolute;
+  bottom: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  padding-bottom: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  color: var(--cor-dourado);
 }
 
-.project-card:hover .project-overlay {
-  opacity: 1;
+.servico-card__icone svg {
+  width: 18px;
+  height: 18px;
 }
 
-.project-overlay button {
-  border: none;
-  padding: 14px 24px;
-  border-radius: 40px;
-  background: white;
-  cursor: pointer;
+.servico-card__corpo {
+  padding: 30px 20px 24px;
+}
+
+.servico-card__nome {
+  font-family: var(--fonte-titulo);
+  font-size: 1.2rem;
+  color: var(--cor-texto);
+  margin-bottom: 10px;
+  letter-spacing: 0.3px;
+}
+
+.servico-card__descricao {
+  font-size: 13px;
+  color: var(--cor-texto-claro);
+  line-height: 1.75;
 }
 
 .social-wrapper {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   width: 70%;
-
-  grid-template-columns: 420px 1fr;
   gap: 50px;
   margin-bottom: 100px;
 }
@@ -181,12 +208,13 @@ video {
 
 .contact-row {
   display: flex;
+  flex-direction: column;
   gap: 24px;
 }
 
 .contact-box {
   padding: 28px;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .comments {
@@ -203,70 +231,45 @@ video {
   border: none;
 }
 
-
-@media(max-width: 900px) {
-
-  .projects {
-    column-count: 1;
-  }
-
-  .social-wrapper {
-    grid-template-columns: 1fr;
-  }
-
-  nav {
-    display: none;
-  }
-
-  .hero-person {
-    display: none;
-  }
-
-  .hero-text h1 {
-    font-size: 3rem;
-  }
-
-  video {
-    height: 500px;
-  }
-
-}
-
-.project-modal {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.75);
-  backdrop-filter: blur(5px);
-  display: none;
-  align-items: center;
-  justify-content: center;
-  z-index: 5000;
-  opacity: 0;
-  pointer-events: none;
-  transition: 0.3s;
-  padding: 30px;
-}
-
-.project-modal.active {
-  opacity: 1;
-  pointer-events: all;
-}
-
-.modal-content {
+.about {
   width: 100%;
-  max-width: 1300px;
-  min-height: 700px;
-  background: white;
-  border-radius: 30px;
-  overflow: hidden;
-  display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  position: relative;
-  animation: modalOpen 0.25s ease;
+  display: flex;
+  justify-content: center;
+}
+
+.about-container {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  gap: 60px;
+  align-items: center;
+}
+
+.about-image img {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.section-subtitle {
+  display: inline-block;
+  margin-bottom: 28px;
+  color: #c9aab5;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 30px;
+}
+
+.about-content p {
+  margin-bottom: 24px;
+  line-height: 1.9;
+  font-size: 17px;
+  color: #444;
 }
 
 @keyframes modalOpen {
-
   from {
     transform: scale(0.92);
     opacity: 0;
@@ -276,7 +279,6 @@ video {
     transform: scale(1);
     opacity: 1;
   }
-
 }
 
 .close-modal {
@@ -355,19 +357,32 @@ body.modal-open {
   overflow: hidden;
 }
 
-@media(max-width: 1000px) {
-
-  .modal-content {
-    grid-template-columns: 1fr;
-    height: auto;
+@media(min-width: 768px) {
+  .hero-overlay {
+    justify-content: space-between;
   }
 
-  .modal-left {
-    height: 400px;
+  .hero-person {
+    display: block;
   }
 
-  .modal-right {
-    padding: 40px;
+  .servicos__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 1100px;
   }
 
+  .social-wrapper {
+    display: grid;
+    grid-template-columns: 420px 1fr;
+  }
+
+  .about {
+    padding: 0 0 100px 0;
+  }
+
+  .about-container {
+    flex-direction: row;
+  }
 }

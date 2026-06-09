@@ -1,11 +1,15 @@
 .cabecalho {
   background-color: var(--cor-rodapeheader);
-  display: flex;              /* coloca os filhos em linha */
-  align-items: center;        /* centraliza verticalmente */
-  justify-content: space-between; /* espaço entre logo, nav e botão */
+  display: flex;
+  /* coloca os filhos em linha */
+  align-items: center;
+  /* centraliza verticalmente */
+  justify-content: space-between;
+  /* espaço entre logo, nav e botão */
   padding: 16px 40px;
   border-bottom: 1px solid #0000001c;
-  position: sticky;           /* fica fixo no topo ao rolar */
+  position: sticky;
+  /* fica fixo no topo ao rolar */
   top: 0;
   z-index: 100;
 }
@@ -20,8 +24,10 @@
 }
 
 .cabecalho__logo img {
-  height: 50px;  /* ajuste esse número até ficar do tamanho que quiser */
-  width: auto;   /* mantém a proporção sem distorcer */
+  height: 50px;
+  /* ajuste esse número até ficar do tamanho que quiser */
+  width: auto;  
+  /* mantém a proporção sem distorcer */
 }
 
 .cabecalho__nav a {
@@ -39,8 +45,10 @@
 
 .cabecalho__botao {
   text-decoration: none;
-  background-color: transparent;   /* sem fundo */
-  color: var(--cor-texto);          /* texto escuro */
+  background-color: transparent;
+  /* sem fundo */
+  color: var(--cor-texto);
+  /* texto escuro */
   font-size: 12px;
   font-family: var(--fonte-corpo);
   font-weight: 600;
@@ -58,4 +66,99 @@
   color: #ffffffff;
   background-color: var(--cor-dourado);
   border-color: var(--cor-dourado);
+}
+
+.cabecalho {
+  background-color: var(--cor-rodapeheader);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 40px;
+  border-bottom: 1px solid #0000001c;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  position: relative;
+}
+
+/* Desktop */
+.cabecalho__menu {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.cabecalho__nav {
+  display: flex;
+  align-items: center;
+}
+
+.cabecalho__hamburguer {
+  display: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.cabecalho__hamburguer span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background: var(--cor-texto);
+  margin: 5px 0;
+  transition: .3s;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+  .cabecalho {
+    padding: 16px 20px;
+  }
+
+  .cabecalho__hamburguer {
+    display: block;
+  }
+
+  .cabecalho__menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: var(--cor-rodapeheader);
+
+    display: flex;
+    flex-direction: column;
+
+    max-height: 0;
+    overflow: hidden;
+
+    transition: max-height .3s ease;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .cabecalho__menu.ativo {
+    max-height: 500px;
+    padding: 20px 0;
+  }
+
+  .cabecalho__nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .cabecalho__nav a {
+    margin: 0;
+    padding: 15px 20px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .cabecalho__botao {
+    margin: 20px;
+    text-align: center;
+  }
 }

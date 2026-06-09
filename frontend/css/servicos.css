@@ -5,7 +5,7 @@
    ========================================== */
 @import url(./global.css);
 @import url(./components/header.css);
-
+@import url(./components/footer.css);
 
 /* ------------------------------------------
    CONFIGURAÇÕES GERAIS
@@ -465,17 +465,20 @@ a {
 }
 
 .cta__titulo {
-  font-family: var(--fonte-titulo);
   font-size: clamp(1.8rem, 3.5vw, 3rem);
   font-weight: 300;
+<<<<<<< HEAD
   color: #f0e8c8; /* Tom creme/dourado claro */
+=======
+  color: var(--cor-texto);
+>>>>>>> 1b54f3300a60b1a58a1a9f267e48d1f8dc0c48b1
   line-height: 1.2;
   margin-bottom: 14px;
 }
 
 .cta__descricao {
   font-size: 14px;
-  color: #d4c98a;
+  color: var(--cor-texto);
   margin-bottom: 36px;
 }
 
@@ -495,6 +498,7 @@ a {
   color: #ffffff;
 }
 
+<<<<<<< HEAD
 
 /* ------------------------------------------
    <footer class="rodape">
@@ -569,6 +573,9 @@ a {
    ------------------------------------------ */
 
 /* Tablets e Telas Médias */
+=======
+/* ── RESPONSIVO ──────────────────────────── */
+>>>>>>> 1b54f3300a60b1a58a1a9f267e48d1f8dc0c48b1
 @media (max-width: 960px) {
   .servicos__grid {
     grid-template-columns: repeat(2, 1fr);
