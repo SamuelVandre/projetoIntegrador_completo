@@ -386,3 +386,133 @@
       flex-direction: row;
     }
   }
+
+  /* ===========================
+   ACESSIBILIDADE
+=========================== */
+
+  /* Navegação por teclado */
+  *:focus-visible {
+    outline: 3px solid #b78a4b;
+    outline-offset: 4px;
+    border-radius: 4px;
+  }
+
+  /* Remove outline apenas para clique do mouse */
+  *:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  /* Melhor contraste em botões */
+
+  .hero-btn {
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: .5px;
+  }
+
+  .hero-btn:hover,
+  .hero-btn:focus-visible {
+    background: white;
+    color: #222;
+  }
+
+  /* Links */
+
+  a {
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+  }
+
+  a:hover,
+  a:focus-visible {
+    text-decoration: underline;
+  }
+
+  /* Inputs */
+
+  input,
+  textarea,
+  select,
+  button {
+    font: inherit;
+  }
+
+  input:focus-visible,
+  textarea:focus-visible,
+  select:focus-visible,
+  button:focus-visible {
+    outline: 3px solid #b78a4b;
+    outline-offset: 3px;
+  }
+
+  /* Melhor legibilidade */
+
+  body {
+    line-height: 1.6;
+  }
+
+  /* Evita textos muito comprimidos */
+
+  p {
+    max-width: 70ch;
+  }
+
+  /* Melhora leitura */
+
+  .servico-card__descricao,
+  .about-content p,
+  .modal-right p {
+    line-height: 1.8;
+  }
+
+  /* Respeita usuários com redução de movimento */
+
+  @media (prefers-reduced-motion: reduce) {
+
+    * {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+      scroll-behavior: auto !important;
+    }
+
+  }
+
+  /* Cursor coerente */
+
+  button,
+  a,
+  .carousel-btn,
+  .close-modal {
+    cursor: pointer;
+  }
+
+  /* Alvos maiores para toque */
+
+  .hero-btn,
+  .carousel-btn,
+  .close-modal {
+    min-width: 48px;
+    min-height: 48px;
+  }
+
+  /* Melhor contraste em cards */
+
+  .servico-card {
+    border: 1px solid #e4e4e4;
+  }
+
+  /* Evita zoom horizontal */
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  /* Seleção de texto visível */
+
+  ::selection {
+    background: #c9aab5;
+    color: white;
+  }

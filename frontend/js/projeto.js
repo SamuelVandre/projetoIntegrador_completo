@@ -1,12 +1,20 @@
 const botoes = document.querySelectorAll(".saibaBtn");
 
-botoes.forEach(btn => {
-    btn.addEventListener("click", (event) => {
-        const projetoTextoDesc = event.target.parentElement.querySelector(".textoDesc");
+botoes.forEach((botao) => {
 
-        projetoTextoDesc.style.display =
-            getComputedStyle(projetoTextoDesc).display === "none"
-                ? "block"
-                : "none";
+    botao.addEventListener("click", () => {
+
+        const descricao =
+            botao.parentElement.querySelector(".textoDesc");
+
+        descricao.classList.toggle("ativo");
+
+        if (descricao.classList.contains("ativo")) {
+            botao.textContent = "Mostrar Menos";
+        } else {
+            botao.textContent = "Saiba Mais";
+        }
+
     });
+
 });
