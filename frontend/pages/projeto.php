@@ -16,10 +16,9 @@
 <main>
 
     <figure class="hero">
-        <img src="../assets/images/ResComCorp1.png" alt="">
+        <img src="../assets/images/imagensProjetos/casaterreanublado.jpeg" alt="projetos">
         <figcaption>
             <h1>Projetos</h1>
-            <h5>NAYARA LEAL ARQUITETURA</h5>
             <h2>Projetos inteligentes que unem beleza, funcionalidade e segurança.</h2>
         </figcaption>
     </figure>
@@ -29,7 +28,7 @@
     <section class="projetos">
 
         <figure class="projeto">
-            <img src="../assets/images/CasaCampo.png" alt="">
+            <img src="../assets/images/imagensProjetos/casa_sobrado_porta_marrom.jpeg" alt="">
             <div class="projetoDesc">
                 <figcaption>
                     Casa Térrea cod.00098
@@ -40,7 +39,7 @@
         </figure>
 
         <figure class="projeto">
-            <img src="../assets/images/Terrea3.png" alt="">
+            <img src="../assets/images/imagensProjetos/sobrado_praia_outra.jpeg" alt="">
             <div class="projetoDesc">
                 <figcaption>
                     Casa Térrea cod.00038
@@ -51,7 +50,7 @@
         </figure>
 
         <figure class="projeto">
-            <img src="../assets/images/Terrea1.png" alt="">
+            <img src="../assets/images/imagensProjetos/sobrado_noite.jpeg" alt="">
             <div class="projetoDesc">
                 <figcaption>
                     Casa Térrea cod.00023
@@ -63,12 +62,12 @@
 
     </section>
 
-    <h3>Projetos Comerciais e Corporativos</h3>
+    <h3>Projetos Comerciais</h3>
 
     <section class="projetos">
 
         <figure class="projeto">
-            <img src="../assets/images/Sorveteria.png" alt="">
+            <img src="../assets/images/imagensProjetos/shopee.jpg" alt="shopee">
             <div class="projetoDesc">
                 <figcaption>
                     Prédio Comercial cod.01010
@@ -79,7 +78,7 @@
         </figure>
 
         <figure class="projeto">
-            <img src="../assets/images/Lanchonete (1).png" alt="">
+            <img src="../assets/images/imagensProjetos/shopee.jpg" alt="shopee">
             <div class="projetoDesc">
                 <figcaption>
                     Prédio Comercial cod.01310
@@ -90,7 +89,7 @@
         </figure>
 
         <figure class="projeto">
-            <img src="../assets/images/Loja.png" alt="">
+         <img src="../assets/images/imagensProjetos/shopee.jpg" alt="shopee">
             <div class="projetoDesc">
                 <figcaption>
                     Prédio Comercial cod.01018
@@ -107,21 +106,21 @@
     <section class="personalizados">
 
         <div class="personalizado">
-            <img src="../assets/images/ProjPersonaliz.png" alt="">
+            <img src="../assets/images/imagensProjetos/escritorio_persiana.jpeg" alt="escritório com persiana">
             <div class="texto">
                 Transforme sua ideia em um projeto completo, moderno e totalmente planejado.
             </div>
         </div>
 
         <div class="personalizado">
-            <img src="../assets/images/ResComCorp.png" alt="">
+            <img src="../assets/images/imagensProjetos/banheiro_marmore.jpeg" alt="banheiro com marmore">
             <div class="texto">
                 Projetos residenciais, comerciais e corporativos adaptados às necessidades de cada cliente.
             </div>
         </div>
 
         <div class="personalizado">
-            <img src="../assets/images/engenheiro.png" alt="">
+            <img src="../assets/images/imagensProjetos/sala.jpeg" alt="sala moderna">
             <div class="texto">
                 Soluções técnicas que garantem eficiência e segurança em todas as etapas da obra.
             </div>

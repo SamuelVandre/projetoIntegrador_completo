@@ -22,7 +22,7 @@
   <!-- HERO -->
   <section class="hero">
     <div class="hero-overlay">
-      <img src="../assets/images/nayara_foto.jpg" alt="sla">
+      <img src="../assets/images/imagensProjetos/casaterreasol.jpeg" alt="Casa térrea com painel solar no telhado">
     </div>
 
     <div class="hero-content">
@@ -35,7 +35,7 @@
     <div class="container about-container">
 
       <div class="about-image">
-        <img src="../assets/images/nayara_fotinha.jpg" alt="Arquiteta">
+        <img src="../assets/images/Nayara/naysorrindolampadaazul.jpeg" alt="Nayara sorrindo com uma lâmpada azul">
       </div>
 
       <div class="about-content">

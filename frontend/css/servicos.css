@@ -1,552 +1,232 @@
-/* ==========================================
-   IMPORTS
-   Puxa o global.css (variáveis, reset) e os
-   estilos do header incluídos via PHP/HTML
-   ========================================== */
-@import url(./global.css);
-@import url(./components/header.css);
-@import url(./components/footer.css);
+@import url('./global.css');
+@import url('./components/header.css');
+@import url('./components/footer.css');
 
-/* ------------------------------------------
-   CONFIGURAÇÕES GERAIS
-   Comportamentos base para tags globais da 
-   página de serviços
-   ------------------------------------------ */
-html {
-  scroll-behavior: smooth; /* Rolagem suave para links âncora */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  background-color: var(--cor-fundo);
-  color: var(--cor-texto);
+    font-family: Arial, Helvetica, sans-serif;
+    background: #faf8f8;
 }
 
-img {
-  display: block;
-  width: 100%;
-  object-fit: cover;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-
-/* ------------------------------------------
-   <section class="hero">
-   Banner principal de impacto com imagem de 
-   fundo e texto alinhado à base
-   ------------------------------------------ */
+/* ── HERO ─────────────────────────────────── */
 .hero {
-  position: relative;
-  height: 92vh;
-  min-height: 520px;
-  background: url('https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=1400&q=85') center / cover no-repeat;
-  display: flex;
-  align-items: flex-end;
-  padding-bottom: 80px;
+    position: relative;
+    height: 600px;
+    overflow: hidden;
 }
 
-/* Camada escura sobre a imagem para dar leitura ao texto */
-.hero__overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    160deg,
-    rgba(30, 20, 10, 0.15) 0%,
-    rgba(30, 20, 10, 0.52) 100%
-  );
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.hero__conteudo {
-  position: relative;
-  z-index: 2;
-  padding: 0 8%;
-  max-width: 660px;
+.hero figcaption {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, .45);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
 }
 
-.hero__subtitulo {
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 2.5px;
-  color: var(--cor-dourado);
-  margin-bottom: 12px;
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
 }
 
-.hero__titulo {
-  font-family: var(--fonte-titulo);
-  font-size: clamp(3rem, 8vw, 5.5rem);
-  font-weight: 300;
-  color: #ffffff;
-  line-height: 1.05;
-  margin-bottom: 14px;
+.hero h2 {
+    max-width: 900px;
 }
 
-.hero__descricao {
-  font-size: 14px;
-  color: rgba(255, 255, 255, 0.82);
-  letter-spacing: 0.3px;
-  max-width: 380px;
-  margin-bottom: 32px;
-  line-height: 1.7;
+/* ── TÍTULOS DE SEÇÃO ─────────────────────── */
+h3 {
+    color: var(--cor-texto);
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 50px 0 30px;
 }
 
-/* Botão branco que inverte para dourado no hover */
-.hero__botao {
-  display: inline-block;
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 2px;
-  color: var(--cor-texto);
-  background-color: #ffffff;
-  padding: 13px 30px;
-  transition: background-color 0.2s, color 0.2s;
-}
-
-.hero__botao:hover {
-  background-color: var(--cor-dourado);
-  color: #ffffff;
-}
-
-
-/* ------------------------------------------
-   <section class="intro">
-   Bloco de texto e imagem lateral (Lado a Lado)
-   Explicando o conceito do escritório
-   ------------------------------------------ */
+/* ── INTRO ────────────────────────────────── */
 .intro {
-  display: flex;
-  align-items: center;
-  gap: 72px;
-  padding: 90px 8%;
-  background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    gap: 16px;
+    background: white;
 }
 
-.intro__texto {
-  flex: 1;
-}
-
-/* Detalhe visual: linha dourada decorativa */
 .intro__linha {
-  width: 36px;
-  height: 2px;
-  background-color: var(--cor-dourado);
-  margin-bottom: 20px;
+    width: 36px;
+    height: 2px;
+    background-color: var(--cor-dourado);
 }
 
-.intro__titulo {
-  font-family: var(--fonte-titulo);
-  font-size: clamp(1.8rem, 3vw, 2.6rem);
-  font-weight: 400;
-  color: var(--cor-texto);
-  line-height: 1.25;
-  margin-bottom: 18px;
+.intro h3 {
+    margin: 0;
 }
 
-.intro__descricao {
-  font-size: 14px;
-  color: var(--cor-texto-claro);
-  line-height: 1.85;
-  max-width: 420px;
-}
-
-.intro__imagem {
-  flex: 1;
-  overflow: hidden;
-  aspect-ratio: 4 / 3;
-  max-width: 560px;
-}
-
-/* Efeito de zoom suave na imagem ao passar o mouse */
-.intro__imagem img {
-  height: 100%;
-  transition: transform 0.5s ease;
-}
-
-.intro__imagem:hover img {
-  transform: scale(1.04);
+.intro p {
+    max-width: 680px;
+    line-height: 1.8;
+    color: var(--cor-texto-claro, #666);
 }
 
 
-/* ------------------------------------------
-   <section class="servicos">
-   Grid principal exibindo os tipos de projetos
-   ------------------------------------------ */
-.servicos {
-  padding: 90px 6%;
-  background-color: var(--cor-fundo);
-  text-align: center;
-}
 
-.servicos__subtitulo {
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 2.5px;
-  color: var(--cor-dourado);
-  margin-bottom: 10px;
-}
-
-.servicos__titulo {
-  font-family: var(--fonte-titulo);
-  font-size: clamp(1.6rem, 3vw, 2.4rem);
-  font-weight: 400;
-  color: var(--cor-texto);
-  letter-spacing: 0.3px;
-  margin-bottom: 12px;
-}
-
-.servicos__divisor {
-  width: 36px;
-  height: 2px;
-  background-color: var(--cor-dourado);
-  margin: 0 auto 52px;
-}
-
-/* Grid de 3 colunas que se ajusta no responsivo */
-.servicos__grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-
-/* ------------------------------------------
-   <article class="servico-card">
-   Card individual com imagem, ícone flutuante
-   e descrição do serviço
-   ------------------------------------------ */
-.servico-card {
-  background-color: #ffffff;
-  text-align: center;
-  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.servico-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.11);
-}
-
-.servico-card__imagem-wrap {
-  position: relative;
-  aspect-ratio: 4 / 3;
-  overflow: hidden;
-}
-
-.servico-card__imagem-wrap img {
-  height: 100%;
-  transition: transform 0.5s ease;
-}
-
-.servico-card:hover .servico-card__imagem-wrap img {
-  transform: scale(1.06);
-}
-
-/* Círculo branco com o ícone dourado centralizado */
-.servico-card__icone {
-  position: absolute;
-  bottom: -18px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 40px;
-  height: 40px;
-  background-color: #ffffff;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  color: var(--cor-dourado);
-}
-
-.servico-card__icone svg {
-  width: 18px;
-  height: 18px;
-}
-
-.servico-card__corpo {
-  padding: 30px 20px 24px;
-}
-
-.servico-card__nome {
-  font-family: var(--fonte-titulo);
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: var(--cor-texto);
-  margin-bottom: 10px;
-  letter-spacing: 0.3px;
-}
-
-.servico-card__descricao {
-  font-size: 13px;
-  color: var(--cor-texto-claro);
-  line-height: 1.75;
-}
-
-
-/* ------------------------------------------
-   <section class="banner">
-   Bloco de destaque com fundo em cor de borda
-   e imagem ocupando 100% da altura da div
-   ------------------------------------------ */
+/* ── BANNER ───────────────────────────────── */
 .banner {
-  display: flex;
-  background-color: var(--cor-borda);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    padding: 50px;
+    background: white;
 }
 
-.banner__imagem {
-  flex: 1;
-  overflow: hidden;
-  max-width: 480px;
-}
-
-.banner__imagem img {
-  height: 100%;
-  object-position: center;
+.banner img {
+    width: 100%;
+    
+   
 }
 
 .banner__texto {
-  flex: 1.4;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 60px 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
 }
 
 .banner__linha {
-  width: 36px;
-  height: 2px;
-  background-color: var(--cor-dourado);
-  margin-bottom: 20px;
+    width: 36px;
+    height: 2px;
+    background-color: var(--cor-dourado);
 }
 
-.banner__titulo {
-  font-family: var(--fonte-titulo);
-  font-size: clamp(1.6rem, 2.5vw, 2.2rem);
-  font-weight: 400;
-  color: var(--cor-texto);
-  margin-bottom: 14px;
+.banner__texto h3 {
+    margin: 0;
 }
 
-.banner__descricao {
-  font-size: 14px;
-  color: var(--cor-texto-claro);
-  line-height: 1.85;
-  max-width: 420px;
+.banner__texto p {
+    max-width: 560px;
+    line-height: 1.8;
+    color: #666;
 }
 
-
-/* ------------------------------------------
-   <section class="processo">
-   Exibição das etapas da metodologia de trabalho
-   ------------------------------------------ */
+/* ── PROCESSO ─────────────────────────────── */
 .processo {
-  padding: 90px 6%;
-  background-color: #ffffff;
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 50px;
 }
 
-.processo__subtitulo {
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 2.5px;
-  color: var(--cor-dourado);
-  margin-bottom: 10px;
-}
-
-.processo__titulo {
-  font-family: var(--fonte-titulo);
-  font-size: clamp(1.6rem, 3vw, 2.4rem);
-  font-weight: 400;
-  color: var(--cor-texto);
-  margin-bottom: 12px;
-}
-
-.processo__divisor {
-  width: 36px;
-  height: 2px;
-  background-color: var(--cor-dourado);
-  margin: 0 auto 52px;
-}
-
-.processo__etapas {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 0;
-}
-
-
-/* ------------------------------------------
-   <div class="etapa">
-   Cada passo individual do processo criativo
-   ------------------------------------------ */
 .etapa {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  width: 130px;
-  gap: 10px;
-  flex-shrink: 0;
-}
-
-.etapa__icone {
-  width: 58px;
-  height: 58px;
-  border-radius: 50%;
-  background-color: var(--cor-fundo);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--cor-dourado);
-  border: 1.5px solid var(--cor-borda);
-  transition: all 0.2s;
-}
-
-/* Inverte as cores do ícone no hover da etapa */
-.etapa:hover .etapa__icone {
-  background-color: var(--cor-dourado);
-  border-color: var(--cor-dourado);
-  color: #ffffff;
-}
-
-.etapa__icone svg {
-  width: 22px;
-  height: 22px;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.048);
+    padding: 30px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
 }
 
 .etapa__numero {
-  font-family: var(--fonte-titulo);
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: var(--cor-dourado);
-  letter-spacing: 0.08em;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--cor-dourado);
 }
 
-.etapa__descricao {
-  font-size: 12px;
-  color: var(--cor-texto-claro);
-  line-height: 1.6;
+.etapa p {
+    font-size: 0.95rem;
+    color: #666;
 }
 
-/* Linha conectora entre as bolinhas das etapas */
-.etapa__conector {
-  flex: 1;
-  min-width: 28px;
-  max-width: 60px;
-  height: 1.5px;
-  background-color: var(--cor-borda);
-  margin-top: 29px;
-}
-
-
-/* ------------------------------------------
-   <section class="cta">
-   Call to Action (Chamada para ação) final
-   com cores mais escuras/nobres
-   ------------------------------------------ */
+/* ── CTA ──────────────────────────────────── */
 .cta {
-  background-color: var(--cor-rodape);
-  padding: 90px 6%;
-  text-align: center;
-}
-
-.cta__subtitulo {
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 2.5px;
-  color: var(--cor-dourado);
-  margin-bottom: 12px;
-}
-
-.cta__titulo {
-  font-size: clamp(1.8rem, 3.5vw, 3rem);
-  font-weight: 300;
-  color: #f0e8c8; /* Tom creme/dourado claro */
-  color: var(--cor-texto);
-  line-height: 1.2;
-  margin-bottom: 14px;
-}
-
-.cta__descricao {
-  font-size: 14px;
-  color: var(--cor-texto);
-  margin-bottom: 36px;
-}
-
-.cta__botao {
-  display: inline-block;
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 2px;
-  color: var(--cor-texto);
-  background-color: #ffffff;
-  padding: 14px 36px;
-  transition: all 0.2s;
-}
-
-.cta__botao:hover {
-  background-color: var(--cor-dourado);
-  color: #ffffff;
-}
-
-/* ── RESPONSIVO ──────────────────────────── */
-@media (max-width: 960px) {
-  .servicos__grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .intro {
-    flex-direction: column;
-    gap: 40px;
-    padding: 70px 6%;
-  }
-
-  .banner {
-    flex-direction: column;
-  }
-
-  .banner__imagem {
-    max-width: 100%;
-    aspect-ratio: 16 / 7;
-  }
-}
-
-/* Smartphones e Dispositivos Pequenos */
-@media (max-width: 680px) {
-  .cabecalho__nav {
-    display: none; /* Esconde menu padrão */
-  }
-
-  .servicos__grid {
-    grid-template-columns: 1fr;
-  }
-
-  /* Muda o fluxo das etapas de horizontal para vertical */
-  .processo__etapas {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 24px;
-  }
+    text-align: center;
+    gap: 16px;
+    padding: 50px;
+    background: white;
+}
 
-  .etapa__conector {
-    width: 1.5px;
-    height: 24px;
-    min-width: unset;
-    max-width: unset;
-    margin-top: 0;
-  }
+.cta p:first-child {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    color: var(--cor-dourado);
+}
 
-  .hero {
-    padding-bottom: 50px;
-  }
+.cta h3 {
+    margin: 0;
+}
 
-  .hero__conteudo {
-    padding: 0 6%;
-  }
+.cta p:last-of-type {
+    color: #666;
+}
+
+.cta a {
+    padding: 14px 36px;
+    border: none;
+    border-radius: 8px;
+    background: var(--cor-dourado);
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+.cta a:hover {
+    opacity: .9;
+}
+
+/* ── RESPONSIVO ───────────────────────────── */
+@media (min-width: 768px) {
+    .servicos {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    }
+
+    .processo {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+
+    .banner {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .banner img {
+        flex: 1;
+        height: 360px;
+    }
+
+    .banner__texto {
+        flex: 1;
+        align-items: flex-start;
+        text-align: left;
+    }
 }

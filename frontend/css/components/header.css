@@ -3,7 +3,7 @@
     width: 100%;
     height: 90px;
 
-    background: var(--cor-rodapeheader);
+    background: var(--cor-header);
 
     display:flex;
     align-items:center;
