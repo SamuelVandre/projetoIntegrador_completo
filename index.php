@@ -18,12 +18,13 @@
 
     <section class="hero">
 
-        <img class="hero-bg" alt="Sala de estar moderna projetada por arquiteta"
-            src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1974&auto=format&fit=crop">
+      <!-- Troque "ideiaconceito.jpeg" pelo nome real da imagem de fundo que você quer -->
+      <img class="hero-bg" src="./frontend/assets/images/imagensProjetos/sobrado_praia_outra.jpeg" alt="Projeto de arquitetura moderno">
+
 
         <div class="hero-overlay">
 
-            <img class="hero-person" src="./frontend/assets/images/nayarapng.png" alt="Foto da arquiteta Nayara Leal">
+            <img class="hero-person" src="./frontend/assets/images/Nayara/nayarabraçoscruzado.png" alt="Foto de Nayara Leal sorrindo com os braços cruzados">
 
             <div class="hero-text">
                 <h1>Nayara Leal</h1>
@@ -48,7 +49,7 @@
 
             <div class="servico-card">
                 <div class="servico-card__imagem-wrap">
-                    <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=600&q=80" alt="Arquitetura Residencial">
+                    <img src="./frontend/assets/images/imagensProjetos/sobrado_praia_outra.jpeg" alt="Arquitetura Residencial">
                     <div class="servico-card__icone">
                         <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                             <path d="M3 9.5L12 3l9 6.5V20a1 1 0 01-1 1H4a1 1 0 01-1-1V9.5z" />
@@ -64,7 +65,7 @@
 
             <div class="servico-card">
                 <div class="servico-card__imagem-wrap">
-                    <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&q=80" alt="Design de Interiores">
+                    <img src="./frontend/assets\images\imagensProjetos\banheiro_perto.jpeg" alt="Design de Interiores">
                     <div class="servico-card__icone">
                         <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                             <rect x="3" y="7" width="18" height="13" rx="1" />
@@ -80,7 +81,7 @@
 
             <div class="servico-card">
                 <div class="servico-card__imagem-wrap">
-                    <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=600&q=80" alt="Projetos Comerciais">
+                    <img src="./frontend/assets/images/imagensProjetos/shopee.jpg" alt="Projetos Comerciais">
                     <div class="servico-card__icone">
                         <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                             <path d="M3 21h18M5 21V7l7-4 7 4v14" />
@@ -96,7 +97,7 @@
 
             <div class="servico-card">
                 <div class="servico-card__imagem-wrap">
-                    <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600&q=80" alt="Consultoria Arquitetônica">
+                    <img src="./frontend/assets/images/imagensProjetos/projeto_cliente.jpeg" alt="Consultoria Arquitetônica">
                     <div class="servico-card__icone">
                         <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                             <circle cx="12" cy="8" r="4" />
@@ -112,7 +113,7 @@
 
             <div class="servico-card">
                 <div class="servico-card__imagem-wrap">
-                    <img src="https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?w=600&q=80" alt="Reformas e Remodelações">
+                    <img src="./frontend/assets/images/imagensProjetos/integracao.jpeg" alt="Reformas e Remodelações">
                     <div class="servico-card__icone">
                         <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                             <path d="M14.7 6.3a1 1 0 010 1.4l-8 8a1 1 0 01-.4.2l-3 1 1-3a1 1 0 01.2-.4l8-8a1 1 0 011.4 0z" />
@@ -128,7 +129,7 @@
 
             <div class="servico-card">
                 <div class="servico-card__imagem-wrap">
-                    <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=600&q=80" alt="Projeto 3D e Renderização">
+                    <img src="./frontend/assets/images/imagensProjetos/3d.png" alt="Projeto 3D e Renderização">
                     <div class="servico-card__icone">
                         <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                             <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z" />
@@ -200,36 +201,6 @@
         </div>
 
     </section>
-
-    <section class="about container" aria-labelledby="sobre">
-         <div class="section-title">
-            <div class="line"></div>
-            <h2 id="sobre">Sobre</h2>
-        </div>
-
-        <div class="container about-container">
-
-            <div class="about-image">
-                <img src="./frontend/assets/images/nayara_fotinha.jpg" alt="Retrato da arquiteta Nayara Leal">
-            </div>
-
-            <div class="about-content">
-                <span class="section-subtitle">APRESENTAÇÃO</span>
-
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
-                </p>
-
-                <p>
-                    It has survived not only five centuries, but also the leap
-                    into electronic typesetting, remaining essentially unchanged.
-                    It was popularised in the 1960s.
-                </p>
-            </div>
 
         </div>
     </section>

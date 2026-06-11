@@ -366,6 +366,13 @@
       display: block;
     }
 
+    .hero-bg {
+  width: 100%;
+  height: 100%;       /* ← já está correto no seu CSS */
+  object-fit: cover;
+  filter: brightness(45%);
+}
+
     .servicos__grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
