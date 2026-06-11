@@ -168,11 +168,11 @@
                 <div class="contact-row">
 
                     <div class="contact-box">
-                        📧 exemplo@email.com
+                        📧 nayara.b15@outlook.com
                     </div>
 
                     <div class="contact-box">
-                        📱 (19) 99999-9999
+                        📱 (11) 98196-1554
                     </div>
 
                 </div>

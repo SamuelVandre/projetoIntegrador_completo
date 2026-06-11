@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,8 +16,8 @@
 
 <body>
 
- <?php
-    include_once('../components/header.php');
+  <?php
+  include_once('../components/header.php');
   ?>
 
   <!-- HERO -->
@@ -42,17 +43,15 @@
         <span class="section-subtitle">APRESENTAÇÃO</span>
 
         <p>
-          Lorem Ipsum is simply dummy text of the printing and
-          typesetting industry. Lorem Ipsum has been the industry's
-          standard dummy text ever since the 1500s, when an unknown
-          printer took a galley of type and scrambled it to make a
-          type specimen book.
+          Fundado por Nayara Leal, arquiteta e urbanista, o escritório atua no desenvolvimento de projetos residenciais de alto padrão e ambientes corporativos, unindo estratégia, técnica e sensibilidade estética.
         </p>
 
         <p>
-          It has survived not only five centuries, but also the leap
-          into electronic typesetting, remaining essentially unchanged.
-          It was popularised in the 1960s.
+          Com abordagem criteriosa e metodologia estruturada, cada projeto é conduzido a partir da compreensão profunda das necessidades do cliente, do contexto e da identidade de cada espaço. O resultado são ambientes atemporais, funcionais e coerentes, onde forma e propósito caminham em equilíbrio.
+        </p>
+
+        <p>
+          O compromisso do escritório está na excelência técnica, na precisão dos detalhes e na criação de espaços que comunicam valor, permanência e identidade.
         </p>
       </div>
 
@@ -60,7 +59,7 @@
   </section>
 
   <?php
-    include_once('../components/footer.php');
+  include_once('../components/footer.php');
   ?>
 </body>
 

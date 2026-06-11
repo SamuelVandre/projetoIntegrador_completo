@@ -2,7 +2,7 @@
   --cor-fundo: #f2ede9;
   --cor-dourado: #ce97aa;
   --cor-texto: #2c2c2c;
-  --cor-texto-claro: #888;
+  --cor-texto-claro: #707070;
   --cor-header: #fdfdfd;
   --cor-rodape: #2c2c2c;
   --cor-borda: #0000001c;
@@ -17,7 +17,16 @@
 }
 
 body {
-  background-color: var(--cor-fundo);
-  font-family: var(--fonte-corpo);
-  color: var(--cor-texto);
+  background-color: var(--cor-fundo) !important;
+  scroll-behavior:smooth;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--fonte-titulo) !important;
+  font-weight: 600 !important;
+}
+
+a, p, span, li {
+  font-family: var(--fonte-corpo) !important;
+  font-weight: 400 !important;
 }

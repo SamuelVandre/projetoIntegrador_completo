@@ -33,10 +33,8 @@
             <img src="../assets/images/imagensProjetos/casa_sobrado_porta_marrom.jpeg" alt="">
             <div class="projetoDesc">
                 <figcaption>
-                    Casa Térrea cod.00098
+                    Casa Sobrado cod.00001
                 </figcaption>
-                <p class="textoDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, odit, cumque quae excepturi reprehenderit incidunt adipisci aperiam, ipsam possimus quis</p>
-                <button class="saibaBtn">Saiba Mais</button>
             </div>
         </figure>
 
@@ -44,21 +42,17 @@
             <img src="../assets/images/imagensProjetos/sobrado_praia_outra.jpeg" alt="">
             <div class="projetoDesc">
                 <figcaption>
-                    Casa Térrea cod.00038
+                    Casa Sobrado cod.00002
                 </figcaption>
-                <p class="textoDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, odit, cumque quae excepturi reprehenderit incidunt adipisci aperiam, ipsam possimus quis</p>
-                <button class="saibaBtn">Saiba Mais</button>
             </div>
         </figure>
 
         <figure class="projeto">
-            <img src="../assets/images/imagensProjetos/sobrado_noite.jpeg" alt="">
+            <img src="../assets/images/imagensProjetos/banheiro_perto.jpeg" alt="">
             <div class="projetoDesc">
                 <figcaption>
-                    Casa Térrea cod.00023
+                    Banheiro cod.00003
                 </figcaption>
-                <p class="textoDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, odit, cumque quae excepturi reprehenderit incidunt adipisci aperiam, ipsam possimus quis</p>
-                <button class="saibaBtn">Saiba Mais</button>
             </div>
         </figure>
 
@@ -72,21 +66,17 @@
             <img src="../assets/images/imagensProjetos/shopee.jpg" alt="shopee">
             <div class="projetoDesc">
                 <figcaption>
-                    Prédio Comercial cod.01010
+                    Prédio Comercial cod.00001
                 </figcaption>
-                <p class="textoDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, odit, cumque quae excepturi reprehenderit incidunt adipisci aperiam, ipsam possimus quis</p>
-                <button class="saibaBtn">Saiba Mais</button>
             </div>
         </figure>
 
         <figure class="projeto">
-            <img src="../assets/images/imagensProjetos/shopee.jpg" alt="shopee">
+            <img src="../assets/images/imagensProjetos/escritorio_persiana.jpeg" alt="shopee">
             <div class="projetoDesc">
                 <figcaption>
-                    Prédio Comercial cod.01310
+                    Escritório cod.01310
                 </figcaption>
-                <p class="textoDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, odit, cumque quae excepturi reprehenderit incidunt adipisci aperiam, ipsam possimus quis</p>
-                <button class="saibaBtn">Saiba Mais</button>
             </div>
         </figure>
 
@@ -96,8 +86,6 @@
                 <figcaption>
                     Prédio Comercial cod.01018
                 </figcaption>
-                <p class="textoDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, odit, cumque quae excepturi reprehenderit incidunt adipisci aperiam, ipsam possimus quis</p>
-                <button class="saibaBtn">Saiba Mais</button>
             </div>
         </figure>
 

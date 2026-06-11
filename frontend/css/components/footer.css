@@ -1,14 +1,14 @@
 :root {
   --cor-fundo-rodape: #1a1a1a;     /* Cinza quase preto, muito elegante */
-  --cor-texto-claro: #e0e0e0;      /* Branco levemente acinzentado */
-  --cor-texto-suave: #999;         /* Para textos secundários */
-  --cor-dourado: #ce97aa;          /* Dourado champagne sofisticado */
-  --cor-borda: rgba(255, 255, 255, 0.1);
+  --cor-texto-claro-rodape: #e0e0e0;      /* Branco levemente acinzentado */
+  --cor-texto-suave-rodape: #999;         /* Para textos secundários */
+  --cor-dourado-rodape: #ce97aa;          /* Dourado champagne sofisticado */
+  --cor-borda-rodape: rgba(255, 255, 255, 0.1);
 }
 
 .rodape {
   background-color: var(--cor-fundo-rodape);
-  color: var(--cor-texto-claro);
+  color: var(--cor-texto-claro-rodape);
   padding: 60px 20px 20px 20px; /* Mais espaço no topo para respirar */
   font-family: 'Montserrat', sans-serif; /* Sugestão de fonte moderna */
 }
@@ -38,13 +38,13 @@
 .rodape__logo span {
   display: block;
   font-weight: 700;
-  color: var(--cor-dourado);
+  color: var(--cor-dourado-rodape);
   font-size: 14px;
 }
 
 .rodape__frase {
   font-size: 13px;
-  color: var(--cor-texto-suave);
+  color: var(--cor-texto-suave-rodape);
   font-style: italic;
 }
 
@@ -55,14 +55,14 @@
   font-size: 12px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: var(--cor-dourado);
+  color: var(--cor-dourado-rodape);
 }
 
 .rodape__contatos p,
 .rodape__redes p {
   font-size: 14px;
   line-height: 2;
-  color: var(--cor-texto-claro);
+  color: var(--cor-texto-claro-rodape);
 }
 
 /* Links e Efeitos */
@@ -72,7 +72,7 @@
 }
 
 .rodape__links a {
-  color: var(--cor-texto-claro);
+  color: var(--cor-texto-claro-rodape);
   text-decoration: none;
   font-size: 13px;
   border-bottom: 1px solid transparent;
@@ -81,13 +81,13 @@
 }
 
 .rodape__links a:hover {
-  color: var(--cor-dourado);
-  border-bottom: 1px solid var(--cor-dourado);
+  color: var(--cor-dourado-rodape);
+  border-bottom: 1px solid var(--cor-dourado-rodape);
 }
 
 /* Base Final */
 .rodape__base {
-  border-top: 1px solid var(--cor-borda);
+  border-top: 1px solid var(--cor-borda-rodape);
   padding-top: 20px;
   display: flex;
   justify-content: space-between;
@@ -98,7 +98,7 @@
 
 .rodape__base p {
   font-size: 11px;
-  color: var(--cor-texto-suave);
+  color: var(--cor-texto-suave-rodape);
   letter-spacing: 0.5px;
 }
 

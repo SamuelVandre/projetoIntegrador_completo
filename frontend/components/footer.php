@@ -11,9 +11,9 @@
       <!-- Contatos -->
       <div class="rodape__contatos">
         <p class="rodape__titulo">Contatos</p>
-        <p><i class="icon"></i> exemplo@email.com</p>
-        <p>(19) 9.1010-1010</p>
-        <p>Rua Exemplo, 123 - Centro, Cidade/SP</p>
+        <p><i class="icon"></i> nayara.b15@outlook.com</p>
+        <p>(11) 98196-1554 </p>
+        <p>Rua Campo Redondo, Vila Francos, São Paulo/SP</p>
       </div>
 
       <!-- Redes Sociais -->

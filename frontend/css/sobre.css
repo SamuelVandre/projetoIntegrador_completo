@@ -2,24 +2,6 @@
 @import url(./components/header.css);
 @import url(./components/footer.css);
 
-/* RESET */
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
-
-html{
-  scroll-behavior:smooth;
-}
-
-body{
-  font-family:'Poppins', sans-serif;
-  background:#f6f6f6;
-  color:#222;
-  overflow-x:hidden;
-}
-
 img{
   width:100%;
   display:block;
