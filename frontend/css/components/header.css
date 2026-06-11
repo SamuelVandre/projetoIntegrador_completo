@@ -1,164 +1,122 @@
 .cabecalho {
-  background-color: var(--cor-rodapeheader);
-  display: flex;
-  /* coloca os filhos em linha */
-  align-items: center;
-  /* centraliza verticalmente */
-  justify-content: space-between;
-  /* espaço entre logo, nav e botão */
-  padding: 16px 40px;
-  border-bottom: 1px solid #0000001c;
-  position: sticky;
-  /* fica fixo no topo ao rolar */
-  top: 0;
-  z-index: 100;
-}
 
-
-.cabecalho__logo-texto {
-  font-family: var(--fonte-titulo) !important;
-  font-size: 28px;
-  font-weight: 600;
-  color: var(--cor-texto);
-  letter-spacing: 2px;
-}
-
-.cabecalho__logo img {
-  height: 50px;
-  /* ajuste esse número até ficar do tamanho que quiser */
-  width: auto;  
-  /* mantém a proporção sem distorcer */
-}
-
-.cabecalho__nav a {
-  text-decoration: none;
-  color: var(--cor-texto) !important;
-  font-size: 14px !important;
-  margin-left: 32px;
-  letter-spacing: 0.5px !important;
-  transition: color 0.2s;
-}
-
-.cabecalho__nav a:hover {
-  color: var(--cor-dourado);
-}
-
-.cabecalho__botao {
-  text-decoration: none;
-  background-color: transparent;
-  /* sem fundo */
-  color: var(--cor-texto);
-  /* texto escuro */
-  font-size: 12px;
-  font-family: var(--fonte-corpo);
-  font-weight: 600;
-  letter-spacing: 1.5px;
-  padding: 10px 22px;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-  border: 1px solid var(--cor-borda);
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.2s, color 0.2s;
-}
-
-
-.cabecalho__botao:hover {
-  color: #ffffffff;
-  background-color: var(--cor-dourado);
-  border-color: var(--cor-dourado);
-}
-
-.cabecalho {
-  background-color: var(--cor-rodapeheader);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 16px 40px;
-  border-bottom: 1px solid #0000001c;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  position: relative;
-}
-
-/* Desktop */
-.cabecalho__menu {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-}
-
-.cabecalho__nav {
-  display: flex;
-  align-items: center;
-}
-
-.cabecalho__hamburguer {
-  display: none;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  padding: 5px;
-}
-
-.cabecalho__hamburguer span {
-  display: block;
-  width: 28px;
-  height: 3px;
-  background: var(--cor-texto);
-  margin: 5px 0;
-  transition: .3s;
-}
-
-/* Mobile */
-
-@media (max-width: 768px) {
-
-  .cabecalho {
-    padding: 16px 20px;
-  }
-
-  .cabecalho__hamburguer {
-    display: block;
-  }
-
-  .cabecalho__menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
     width: 100%;
+    height: 90px;
+
     background: var(--cor-rodapeheader);
 
-    display: flex;
-    flex-direction: column;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
 
-    max-height: 0;
-    overflow: hidden;
+    padding:0 64px;
 
-    transition: max-height .3s ease;
-    border-bottom: 1px solid #ddd;
-  }
+    border-bottom:1px solid rgba(0,0,0,.08);
 
-  .cabecalho__menu.ativo {
-    max-height: 500px;
-    padding: 20px 0;
-  }
+    position:sticky;
+    top:0;
 
-  .cabecalho__nav {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
+    z-index:100;
 
-  .cabecalho__nav a {
-    margin: 0;
-    padding: 15px 20px;
-    width: 100%;
-    text-align: center;
-  }
+}
 
-  .cabecalho__botao {
-    margin: 20px;
-    text-align: center;
-  }
+.cabecalho__logo{
+
+    flex:0 0 auto;
+
+}
+
+.cabecalho__logo img{
+
+    height:54px;
+    width:auto;
+
+}
+
+.cabecalho__menu{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:flex-end;
+
+    gap:48px;
+
+    flex:1;
+
+}
+
+.cabecalho__nav{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:36px;
+
+    flex:1;
+
+}
+
+.cabecalho__nav a{
+
+    text-decoration:none;
+
+    color:var(--cor-texto);
+
+    font-size:15px;
+
+    font-weight:500;
+
+    letter-spacing:.3px;
+
+    transition:.2s;
+
+}
+
+.cabecalho__nav a:hover{
+
+    color:var(--cor-dourado);
+
+}
+
+.cabecalho__botao{
+
+    white-space:nowrap;
+
+    text-decoration:none;
+
+    border:1px solid var(--cor-dourado);
+
+    padding:14px 26px;
+
+    border-radius:5px;
+
+    transition:.2s;
+
+    font-size:13px;
+
+    letter-spacing:1px;
+
+    font-weight:600;
+
+    color:var(--cor-texto);
+
+}
+
+.cabecalho__botao:hover{
+
+    background:var(--cor-dourado);
+
+    color:white;
+
+}
+
+.cabecalho__hamburguer{
+
+    display:none;
+
 }

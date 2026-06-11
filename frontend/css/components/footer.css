@@ -3,7 +3,7 @@
 .rodape {
   background-color: var(--cor-rodapeheader);
   color: #f0e8c8;
-  padding: 48px 40px 24px;
+  padding: 16px 32px 32px 32px;
 }
 
 .rodape__conteudo {

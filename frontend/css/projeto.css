@@ -81,12 +81,24 @@ h3 {
 }
 
 .projeto figcaption {
-    padding: 20px;
+    margin-bottom: 12px;
     font-weight: bold;
 }
 
+.projeto .projetoDesc {
+    padding: 24px 32px 12px 32px;
+}
+
+
+    .projeto .projetoDesc p {
+    display: none;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.7);
+    text-align: start;
+    margin: 0 0 12px 0;
+}
+
 .projeto button {
-    margin: 0 20px 20px;
     padding: 12px 20px;
     border: none;
     border-radius: 8px;

@@ -30,26 +30,35 @@
 
         <figure class="projeto">
             <img src="../assets/images/CasaCampo.png" alt="">
-            <figcaption>
-                Casa Térrea cod.00098
-            </figcaption>
-            <button>Ver Projeto</button>
+            <div class="projetoDesc">
+                <figcaption>
+                    Casa Térrea cod.00098
+                </figcaption>
+                <p class="textoDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, odit, cumque quae excepturi reprehenderit incidunt adipisci aperiam, ipsam possimus quis</p>
+                <button class="saibaBtn">Saiba Mais</button>
+            </div>
         </figure>
 
         <figure class="projeto">
             <img src="../assets/images/Terrea3.png" alt="">
-            <figcaption>
-                Casa Térrea cod.00038
-            </figcaption>
-            <button>Ver Projeto</button>
+            <div class="projetoDesc">
+                <figcaption>
+                    Casa Térrea cod.00038
+                </figcaption>
+                <p class="textoDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, odit, cumque quae excepturi reprehenderit incidunt adipisci aperiam, ipsam possimus quis</p>
+                <button class="saibaBtn">Saiba Mais</button>
+            </div>
         </figure>
 
         <figure class="projeto">
             <img src="../assets/images/Terrea1.png" alt="">
-            <figcaption>
-                Casa Térrea cod.00023
-            </figcaption>
-            <button>Ver Projeto</button>
+            <div class="projetoDesc">
+                <figcaption>
+                    Casa Térrea cod.00023
+                </figcaption>
+                <p class="textoDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, odit, cumque quae excepturi reprehenderit incidunt adipisci aperiam, ipsam possimus quis</p>
+                <button class="saibaBtn">Saiba Mais</button>
+            </div>
         </figure>
 
     </section>
@@ -60,26 +69,35 @@
 
         <figure class="projeto">
             <img src="../assets/images/Sorveteria.png" alt="">
-            <figcaption>
-                Prédio Comercial cod.01010
-            </figcaption>
-            <button>Ver Projeto</button>
+            <div class="projetoDesc">
+                <figcaption>
+                    Prédio Comercial cod.01010
+                </figcaption>
+                <p class="textoDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, odit, cumque quae excepturi reprehenderit incidunt adipisci aperiam, ipsam possimus quis</p>
+                <button class="saibaBtn">Saiba Mais</button>
+            </div>
         </figure>
 
         <figure class="projeto">
             <img src="../assets/images/Lanchonete (1).png" alt="">
-            <figcaption>
-                Prédio Comercial cod.01310
-            </figcaption>
-            <button>Ver Projeto</button>
+            <div class="projetoDesc">
+                <figcaption>
+                    Prédio Comercial cod.01310
+                </figcaption>
+                <p class="textoDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, odit, cumque quae excepturi reprehenderit incidunt adipisci aperiam, ipsam possimus quis</p>
+                <button class="saibaBtn">Saiba Mais</button>
+            </div>
         </figure>
 
         <figure class="projeto">
             <img src="../assets/images/Loja.png" alt="">
-            <figcaption>
-                Prédio Comercial cod.01018
-            </figcaption>
-            <button>Ver Projeto</button>
+            <div class="projetoDesc">
+                <figcaption>
+                    Prédio Comercial cod.01018
+                </figcaption>
+                <p class="textoDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, odit, cumque quae excepturi reprehenderit incidunt adipisci aperiam, ipsam possimus quis</p>
+                <button class="saibaBtn">Saiba Mais</button>
+            </div>
         </figure>
 
     </section>
@@ -115,6 +133,7 @@
         include_once('../components/footer.php');
     ?>
 
+    <script src="../js/projeto.js"></script>
 </main>
 
 </body>
