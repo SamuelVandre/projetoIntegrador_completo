@@ -5,8 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Serviços | Nayara Leal Arquitetura</title>
-  <link rel="shortcut icon" href="../assets/icons/logo.jpeg" type="image/x-icon">
+  <link rel="shortcut icon" href="../assets/icons/NayaraLeal.svg" type="image/x-icon">
   <link rel="stylesheet" href="../css/servicos.css">
+  
 
 </head>
 
@@ -17,13 +18,13 @@
   <main>
 
     <!-- HERO -->
-    <figure class="hero">
-      <img src="../assets/images/imagensProjetos/sobrado_noite.jpeg" alt="Sobrado moderno iluminado à noite">
-      <figcaption>
+   <section class="hero">
+    <img class="hero-bg" src="../assets/images/imagensProjetos/casaterreanublado.jpeg" alt="Sobrado moderno iluminado à noite">
+    <div class="hero-overlay">
         <h1>Serviços</h1>
         <h2>Transformamos ambientes em experiências sofisticadas, funcionais e atemporais.</h2>
-      </figcaption>
-    </figure>
+    </div>
+</section>
 
 
     <!-- INTRO -->
@@ -36,10 +37,6 @@
         e os objetivos de cada cliente.
       </p>
     </section>
-
-
-
-
     </section>
 
 
@@ -61,22 +58,22 @@
 
       <div class="etapa">
         <span class="etapa__numero">01</span>
-        <p>Briefing e necessidades</p>
+        <p>Alinhamento inicial</p>
       </div>
 
       <div class="etapa">
         <span class="etapa__numero">02</span>
-        <p>Conceito e referências</p>
+        <p>Projeto Conceitual</p>
       </div>
 
       <div class="etapa">
         <span class="etapa__numero">03</span>
-        <p>Criação do projeto</p>
+        <p>Apresentação 3D</p>
       </div>
 
       <div class="etapa">
         <span class="etapa__numero">04</span>
-        <p>Apresentação 3D</p>
+        <p>⁠Projeto Executivo e Interiores</p>
       </div>
 
       <div class="etapa">

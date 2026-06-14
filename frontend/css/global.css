@@ -18,7 +18,7 @@
 
 body {
   background-color: var(--cor-fundo) !important;
-  scroll-behavior:smooth;
+  scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4, h5 {

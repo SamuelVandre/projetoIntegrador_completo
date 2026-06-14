@@ -1,32 +1,25 @@
-:root {
-  --cor-fundo-rodape: #1a1a1a;     /* Cinza quase preto, muito elegante */
-  --cor-texto-claro-rodape: #e0e0e0;      /* Branco levemente acinzentado */
-  --cor-texto-suave-rodape: #999;         /* Para textos secundários */
-  --cor-dourado-rodape: #ce97aa;          /* Dourado champagne sofisticado */
-  --cor-borda-rodape: rgba(255, 255, 255, 0.1);
-}
+@import url('../global.css');
 
 .rodape {
-  background-color: var(--cor-fundo-rodape);
-  color: var(--cor-texto-claro-rodape);
-  padding: 60px 20px 20px 20px; /* Mais espaço no topo para respirar */
-  font-family: 'Montserrat', sans-serif; /* Sugestão de fonte moderna */
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+  padding: 60px 20px 20px 20px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .rodape__container {
   max-width: 1200px;
-  margin: 0 auto; /* Centraliza o conteúdo no meio da tela */
+  margin: 0 auto;
 }
 
 .rodape__conteudo {
   display: flex;
-  justify-content: space-between; /* Espalha os blocos */
+  justify-content: space-between;
   gap: 40px;
   margin-bottom: 50px;
-  flex-wrap: wrap;           
+  flex-wrap: wrap;
 }
 
-/* Identidade Visual no Rodapé */
 .rodape__logo {
   font-size: 20px;
   font-weight: 300;
@@ -38,56 +31,63 @@
 .rodape__logo span {
   display: block;
   font-weight: 700;
-  color: var(--cor-dourado-rodape);
+  color: var(--cor-dourado);
   font-size: 14px;
 }
 
 .rodape__frase {
   font-size: 13px;
-  color: var(--cor-texto-suave-rodape);
+  color: #999;
   font-style: italic;
 }
 
-/* Títulos das Colunas */
 .rodape__titulo {
   font-weight: 600;
   margin-bottom: 20px;
   font-size: 12px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: var(--cor-dourado-rodape);
+  color: var(--cor-dourado);
 }
 
 .rodape__contatos p,
-.rodape__redes p {
+.rodape__contato-link,
+.rodape__social-link {
   font-size: 14px;
   line-height: 2;
-  color: var(--cor-texto-claro-rodape);
+  color: #e0e0e0;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin-bottom: 8px;
+  transition: color 0.3s ease;
 }
 
-/* Links e Efeitos */
+.rodape__icone {
+  width: 18px;
+  height: 18px;
+  margin-right: 12px;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.rodape__contato-link:hover,
+.rodape__social-link:hover {
+  color: var(--cor-dourado);
+}
+
+.rodape__contato-link:hover .rodape__icone {
+  transform: translateY(-2px);
+}
+
 .rodape__links {
   display: flex;
-  gap: 20px;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.rodape__links a {
-  color: var(--cor-texto-claro-rodape);
-  text-decoration: none;
-  font-size: 13px;
-  border-bottom: 1px solid transparent;
-  transition: all 0.3s ease;
-  padding-bottom: 2px;
-}
-
-.rodape__links a:hover {
-  color: var(--cor-dourado-rodape);
-  border-bottom: 1px solid var(--cor-dourado-rodape);
-}
-
-/* Base Final */
 .rodape__base {
-  border-top: 1px solid var(--cor-borda-rodape);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding-top: 20px;
   display: flex;
   justify-content: space-between;
@@ -98,19 +98,36 @@
 
 .rodape__base p {
   font-size: 11px;
-  color: var(--cor-texto-suave-rodape);
+  color: #999;
   letter-spacing: 0.5px;
 }
 
-/* Responsividade */
+.whatsapp-link {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-3px); }
+  100% { transform: translateY(0); }
+}
+
 @media (max-width: 768px) {
   .rodape__conteudo {
     flex-direction: column;
     text-align: center;
   }
-  .rodape__links {
+
+  .rodape__contatos p,
+  .rodape__contato-link,
+  .rodape__social-link {
     justify-content: center;
   }
+
+  .rodape__links {
+    align-items: center;
+  }
+
   .rodape__base {
     flex-direction: column;
     text-align: center;

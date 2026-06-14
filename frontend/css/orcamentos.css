@@ -13,7 +13,7 @@
   display: flex;              /* Ativa o modo de caixa flexível */
   justify-content: center;    /* Centraliza o formulário horizontalmente */
   align-items: center;        /* Centraliza o formulário verticalmente */
-  padding: 60px 20px;         /* Espaçamento interno para não grudar nas bordas em telas pequenas */
+  padding: 80px 20px;         /* Espaçamento interno para não grudar nas bordas em telas pequenas */
 }
 
 /* Container do Formulário (Card Branco) */

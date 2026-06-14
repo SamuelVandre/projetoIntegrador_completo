@@ -1,7 +1,7 @@
 <header class="cabecalho">
 
     <div class="cabecalho__logo">
-        <img src="/frontend/assets/icons/icone.png" alt="Logo da empresa">
+        <img src="/frontend/assets/icons/NayaraLeal.svg" alt="Logo da empresa">
     </div>
 
     <button class="cabecalho__hamburguer" id="hamburguer">
@@ -19,8 +19,7 @@
             <a href="/frontend/pages/sobre.php">Sobre</a>
         </nav>
 
-        <a href="/frontend/pages/orcamentos.php"
-           class="cabecalho__botao">
+        <a href="/frontend/pages/orcamentos.php" class="cabecalho__botao">
             Solicitar orçamento
         </a>
 

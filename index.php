@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home | Nayara Leal Arquitetura</title>
     <link rel="stylesheet" href="./frontend/css/home.css">
+    <link rel="shortcut icon" href="./frontend/assets/icons/NayaraLeal.svg" type="image/x-icon">
 </head>
 
 <body>
@@ -19,7 +20,7 @@
     <section class="hero">
 
       <!-- Troque "ideiaconceito.jpeg" pelo nome real da imagem de fundo que você quer -->
-      <img class="hero-bg" src="./frontend/assets/images/imagensProjetos/sobrado_praia_outra.jpeg" alt="Projeto de arquitetura moderno">
+      <img class="hero-bg" src="./frontend/assets/images/imagensProjetos/casaterreanublado.jpeg" alt="Projeto de arquitetura moderno">
 
 
         <div class="hero-overlay">
@@ -32,7 +33,9 @@
 
                 <div class="ornament"></div>
 
-                <button aria-label="Solicitar orçamento" class="hero-btn" onclick="window.location.href='/frontend/pages/orcamentos.php'">Solicitar orçamento</button>
+              <button aria-label="Solicitar orçamento" class="hero-btn" 
+        onclick="window.open('https://wa.me/5511981961554?text=Olá!%20Gostaria%20de%20um%20orçamento.', '_blank')">
+    Solicitar orçamento</button>
             </div>
 
         </div>
@@ -113,7 +116,7 @@
 
             <div class="servico-card">
                 <div class="servico-card__imagem-wrap">
-                    <img src="./frontend/assets/images/imagensProjetos/integracao.jpeg" alt="Reformas e Remodelações">
+                    <img src="./frontend/assets/images/Nayara/Nayobra.jpeg" alt="Reformas e Remodelações">
                     <div class="servico-card__icone">
                         <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                             <path d="M14.7 6.3a1 1 0 010 1.4l-8 8a1 1 0 01-.4.2l-3 1 1-3a1 1 0 01.2-.4l8-8a1 1 0 011.4 0z" />
@@ -156,10 +159,10 @@
         <div class="social-wrapper">
 
             <div class="video-box">
-                <div class="video-top">@arquitetanayaraleal</div>
+                <div class="video-top"><a href="https://www.instagram.com/arquitetanayaraleal/" target="_blank" rel="noopener noreferrer">@arquitetanayaraleal</a></div>
 
                 <video paused loop controls preload="metadata" aria-label="Vídeo institucional da arquiteta Nayara Leal">
-                    <source src="./frontend/assets/videos/instavideo.mp4" type="video/mp4">
+                    <source src="./frontend/assets/videos/ultimovideo.mp4" type="video/mp4">
                 </video>
             </div>
 

@@ -7,56 +7,69 @@
     display: block;
   }
 
-  .hero {
-    height: 500px;
-    position: relative;
-    overflow: hidden;
-  }
+/* ── HERO ── */
+.hero {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+}
 
-  .hero-bg {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(45%);
-  }
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(45%);
+  z-index: 0;
+}
 
-  .hero-overlay {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 7%;
-  }
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 7%;
+}
 
-  .hero-person {
-    width: 420px;
-    display: none;
-    align-self: flex-end;
-  }
+.hero-person {
+  width: 420px;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  align-self: flex-end;
+  position: relative;
+  z-index: 2;
+  display: none; /* some em mobile, aparece no @media 768px */
+}
 
-  .hero-text {
-    color: white;
-    text-align: center;
-  }
+.hero-text {
+  color: white;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  padding-right: 5%; /* ← adiciona isso */
+}
 
-  .hero-text h1 {
-    font-size: 4rem;
-    font-weight: 300;
-  }
+.hero-text h1 {
+  font-size: 3.5rem; /* aumenta um pouco */
+  font-weight: 300 !important;
+}
 
-  .hero-text p {
-    font-size: 2rem;
-    margin-top: 16px;
-  }
+.hero-text p {
+  font-size: 1.2rem;
+  margin-top: 8px;
+}
 
-  .ornament {
-    width: 430px;
-    height: 3px;
-    background: white;
-    margin: 32px auto;
-  }
-
+/* O RESTO do arquivo continua igual (h3, .projetos, etc.) */
+ .ornament {
+  width: 200px; /* era 430px, reduz para ficar proporcional ao texto */
+  height: 2px;
+  background: white;
+  margin: 24px auto;
+}
   .hero-btn {
     padding: 16px 32px;
     background: rgba(255, 255, 255, 0.1);
@@ -98,13 +111,13 @@
     font-weight: 300;
   }
 
+ /* ── CARD DE SERVIÇO ─────────────────────── */
   .servicos__grid {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
   }
 
-  /* ── CARD DE SERVIÇO ─────────────────────── */
   .servico-card {
     background-color: #ffffff;
     text-align: center;
@@ -124,9 +137,11 @@
   }
 
   .servico-card__imagem-wrap img {
-    height: 100%;
-    transition: transform 0.5s ease;
-  }
+  width: 100%;         /* ADICIONE ISSO: obriga a imagem a preencher a largura */
+  height: 100%;        /* ADICIONE ISSO: obriga a imagem a preencher a altura */
+  object-fit: cover;   /* ADICIONE ISSO: corta a imagem sem esticar */
+  transition: transform 0.5s ease;
+}
 
   .servico-card:hover .servico-card__imagem-wrap img {
     transform: scale(1.06);
@@ -134,11 +149,11 @@
 
   .servico-card__icone {
     position: absolute;
-    bottom: -18px;
+    bottom: -12px;
     left: 50%;
     transform: translateX(-50%);
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     background-color: #ffffff;
     border-radius: 50%;
     display: flex;
@@ -163,6 +178,7 @@
     color: var(--cor-texto);
     margin-bottom: 12px;
     letter-spacing: 0.3px;
+    font-style: normal
   }
 
   .servico-card__descricao {
@@ -178,7 +194,7 @@
     gap: 64px;
     margin-bottom: 100px;
   }
-
+   /* ── VÍDEO, COMENTÁRIOS E CONTATO ─────────────────────── */
   .video-box,
   .comments,
   .contact-box {
@@ -187,6 +203,22 @@
     overflow: hidden;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
   }
+
+  /* Estilo base do link (Preto e sem sublinhado) */
+.video-top a, 
+.video-top a:visited {
+    color: #1a1a1a;           /* Cor preta/cinza escura */
+    text-decoration: none;    /* Remove o sublinhado */
+    font-weight: 600;         /* Deixa um pouco mais encorpado */
+    transition: 0.3s ease;    /* Suaviza a transição de cor */
+}
+
+/* Efeito Hover (Quando passa o mouse fica Rosé) */
+.video-top a:hover {
+    color: #ce97aa;           /* O tom rosé/dourado do seu site */
+    text-decoration: none;    /* Garante que não apareça sublinhado no hover */
+}
+
 
   .video-top {
     padding: 24px;

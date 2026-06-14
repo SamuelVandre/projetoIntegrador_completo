@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projetos | Nayara Leal Arquitetura</title>
-
+    <link rel="shortcut icon" href="../assets/icons/NayaraLeal.svg" type="image/x-icon">
     <link rel="stylesheet" href="../css/projeto.css">
 </head>
 
@@ -17,13 +17,13 @@
 
     <main>
 
-    <figure class="hero">
-        <img src="../assets/images/imagensProjetos/casaterreanublado.jpeg" alt="projetos">
-        <figcaption>
-            <h1>Projetos</h1>
-            <h2>Projetos inteligentes que unem beleza, funcionalidade e segurança.</h2>
-        </figcaption>
-    </figure>
+    <section class="hero">
+    <img class="hero-bg" src="../assets/images/imagensProjetos/casaterreanublado.jpeg" alt="projetos">
+    <div class="hero-overlay">
+        <h1>Projetos</h1>
+        <h2>Projetos inteligentes que unem beleza, funcionalidade e segurança.</h2>
+    </div>
+</section>
 
         <h3>Projetos Residenciais</h3>
 

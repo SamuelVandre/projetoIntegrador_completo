@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sobre | Nayara Leal Arquitetura</title>
-
+    <link rel="shortcut icon" href="../assets/icons/NayaraLeal.svg" type="image/x-icon">
   <link rel="stylesheet" href="../css/sobre.css" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,21 +22,18 @@
 
   <!-- HERO -->
   <section class="hero">
+    <img class="hero-bg" src="../assets/images/imagensProjetos/casaterreanublado.jpeg" alt="Casa térrea">
     <div class="hero-overlay">
-      <img src="../assets/images/imagensProjetos/casaterreasol.jpeg" alt="Casa térrea com painel solar no telhado">
-    </div>
-
-    <div class="hero-content">
       <h1>Sobre Arquitetura</h1>
       <p>Projetos que transformam espaços em experiências únicas</p>
     </div>
-  </section>
+</section>
 
   <section class="about">
     <div class="container about-container">
 
       <div class="about-image">
-        <img src="../assets/images/Nayara/naysorrindolampadaazul.jpeg" alt="Nayara sorrindo com uma lâmpada azul">
+        <img src="../assets/images/Nayara/nayevento.jpeg" alt="Nayara sorrindo com uma lâmpada azul">
       </div>
 
       <div class="about-content">

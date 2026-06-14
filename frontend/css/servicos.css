@@ -1,40 +1,52 @@
 @import url('./global.css');
 @import url('./components/header.css');
 @import url('./components/footer.css');
-/* ── HERO ─────────────────────────────────── */
+
+/* ── HERO ── */
 .hero {
     position: relative;
-    height: 600px;
+    width: 100%;
+    height: 500px;
     overflow: hidden;
 }
 
-.hero img {
+.hero .hero-bg {
+    position: absolute;
+    inset: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    z-index: 0;
 }
 
-.hero figcaption {
+.hero .hero-overlay {
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, .45);
-    color: #fff;
+    z-index: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.40);
     text-align: center;
-    padding: 20px;
+    padding: 2rem;
 }
 
-.hero h1 {
-    font-size: 4rem;
-    margin-bottom: 10px;
+.hero .hero-overlay h1 {
+    color: #fff;
+    font-size: 3.5rem;
+    font-weight: 300; 
+    margin-bottom: 0.5rem;
 }
 
-.hero h2 {
-    max-width: 900px;
+.hero .hero-overlay h2 {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 300 !important;
+    letter-spacing: 0.05em;
 }
+
+/* O RESTO do arquivo continua igual (h3, .projetos, etc.) */
 
 /* ── TÍTULOS DE SEÇÃO ─────────────────────── */
 h3 {
