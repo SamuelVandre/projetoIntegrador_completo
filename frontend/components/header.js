@@ -21,7 +21,7 @@ body.insertAdjacentHTML('afterbegin', `<header class="cabecalho">
             <a href="/projetoIntegrador_completo/frontend/pages/sobre.html">Sobre</a>
         </nav>
 
-        <a href="/projetoIntegrador_completo/frontend/pages/orcamentos.html" class="cabecalho__botao">
+        <a href="https://wa.me/5511981961554?text=Olá!%20Gostaria%20de%20um%20orçamento." target="_blank" class="cabecalho__botao">
             Solicitar orçamento
         </a>
 
