@@ -322,6 +322,9 @@
     max-width: 640px;
     /* Define a largura máxima do formulário */
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     /* Permite que ele ocupe 100% da largura em telas menores */
     padding: 50px 48px;
     /* Espaçamento interno entre a borda e o conteúdo */
