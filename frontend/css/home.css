@@ -386,6 +386,7 @@
     /* Define a direção da coluna */
     gap: 20px;
     /* Espaçamento padrão entre cada campo */
+    margin-bottom: 20px;
   }
 
   .formulario__linha {
