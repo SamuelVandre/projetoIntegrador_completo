@@ -319,7 +319,6 @@
   #formulario-container {
     background-color: #ffffff;
     /* Define a cor de fundo como branco */
-    /* Permite que ele ocupe 100% da largura em telas menores */
     padding: 50px 48px;
     /* Espaçamento interno entre a borda e o conteúdo */
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.07);
@@ -382,6 +381,12 @@
     /* Organiza os campos um embaixo do outro */
     flex-direction: column;
     /* Define a direção da coluna */
+    background-color: #ffffff;
+    /* Define a cor de fundo como branco */
+    padding: 50px 48px;
+    /* Espaçamento interno entre a borda e o conteúdo */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.07);
+    /* Aplica uma sombra leve e moderna */
     gap: 20px;
     /* Espaçamento padrão entre cada campo */
   }
