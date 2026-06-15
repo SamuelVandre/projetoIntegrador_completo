@@ -201,7 +201,6 @@
     flex-direction: column;
     width: 70%;
     gap: 64px;
-    margin-bottom: 100px;
   }
 
   /* ── VÍDEO, COMENTÁRIOS E CONTATO ─────────────────────── */
@@ -323,7 +322,7 @@
     border-radius: 12px;
     background-color: #ffffff;
     /* Define a cor de fundo como branco */
-    padding: 0 50px 50px 50px;
+    padding: 50px;
     /* Espaçamento interno entre a borda e o conteúdo */
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.07);
     /* Aplica uma sombra leve e moderna */
