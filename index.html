@@ -229,61 +229,67 @@
         </div>
         </section>
 
-        <section id="formulario-container" class="container"> <!-- Cartão branco que centraliza o conteúdo -->
+        <section class="container"> <!-- Cartão branco que centraliza o conteúdo -->
 
-             <div class="section-title">
+            <div class="section-title">
                 <div class="line"></div>
                 <h2 id="redes">ENTRE EM CONTATO</h2>
             </div>
-            <!-- Textos de apresentação -->
-            <p class="descricao">Preencha o formulário e entraremos em contato em até 24h.</p>
-            <!-- Texto explicativo -->
 
-            <!-- Formulário de contato -->
-            <form class="formulario" id="formularioContato"> <!-- Início do bloco de campos -->
+            <div id="formulario-container">
+                <h1 class="titulo">Inicie seu Projeto</h1> <!-- Título principal de destaque -->
+                <!-- Textos de apresentação -->
+                <p class="descricao">Preencha o formulário e entraremos em contato em até 24h.</p>
+                <!-- Texto explicativo -->
 
-                <!-- Linha com Nome e E-mail lado a lado -->
-                <div class="formulario__linha"> <!-- Container para organizar campos em linha -->
+                <!-- Formulário de contato -->
+                <form class="formulario" id="formularioContato"> <!-- Início do bloco de campos -->
 
-                    <div class="formulario__grupo"> <!-- Agrupa label e input de Nome -->
-                        <label for="nome">NOME COMPLETO</label> <!-- Rótulo do campo Nome -->
-                        <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
-                        <!-- Campo de texto obrigatório -->
+                    <!-- Linha com Nome e E-mail lado a lado -->
+                    <div class="formulario__linha"> <!-- Container para organizar campos em linha -->
+
+                        <div class="formulario__grupo"> <!-- Agrupa label e input de Nome -->
+                            <label for="nome">NOME COMPLETO</label> <!-- Rótulo do campo Nome -->
+                            <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                            <!-- Campo de texto obrigatório -->
+                        </div>
+
+                        <div class="formulario__grupo"> <!-- Agrupa label e input de E-mail -->
+                            <label for="email">E-MAIL</label> <!-- Rótulo do campo E-mail -->
+                            <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                            <!-- Campo de e-mail obrigatório -->
+                        </div>
+
                     </div>
 
-                    <div class="formulario__grupo"> <!-- Agrupa label e input de E-mail -->
-                        <label for="email">E-MAIL</label> <!-- Rótulo do campo E-mail -->
-                        <input type="email" id="email" name="email" placeholder="seu@email.com" required>
-                        <!-- Campo de e-mail obrigatório -->
+                    <!-- Tipo de projeto: menu suspenso (select) -->
+                    <div class="formulario__grupo"> <!-- Agrupa label e seletor de projeto -->
+                        <label for="tipoProjeto">TIPO DE PROJETO</label> <!-- Rótulo do seletor -->
+                        <div class="formulario__select-wrapper"> <!-- Container para customizar a seta do select -->
+                            <select id="tipoProjeto" name="tipoProjeto" required> <!-- Menu de opções obrigatório -->
+                                <option value="" disabled selected>Residencial</option>
+                                <!-- Opção padrão desabilitada -->
+                                <option value="residencial">Residencial</option> <!-- Opção residencial -->
+                                <option value="interiores">Interiores / Consultoria</option> <!-- Opção interiores -->
+                                <option value="comercial">Comercial</option> <!-- Opção comercial -->
+                            </select>
+                        </div>
                     </div>
 
-                </div>
-
-                <!-- Tipo de projeto: menu suspenso (select) -->
-                <div class="formulario__grupo"> <!-- Agrupa label e seletor de projeto -->
-                    <label for="tipoProjeto">TIPO DE PROJETO</label> <!-- Rótulo do seletor -->
-                    <div class="formulario__select-wrapper"> <!-- Container para customizar a seta do select -->
-                        <select id="tipoProjeto" name="tipoProjeto" required> <!-- Menu de opções obrigatório -->
-                            <option value="" disabled selected>Residencial</option> <!-- Opção padrão desabilitada -->
-                            <option value="residencial">Residencial</option> <!-- Opção residencial -->
-                            <option value="interiores">Interiores / Consultoria</option> <!-- Opção interiores -->
-                            <option value="comercial">Comercial</option> <!-- Opção comercial -->
-                        </select>
+                    <!-- Área de texto para mensagem -->
+                    <div class="formulario__grupo"> <!-- Agrupa label e campo de mensagem -->
+                        <label for="mensagem">MENSAGEM</label> <!-- Rótulo da área de texto -->
+                        <textarea id="mensagem" name="mensagem" rows="6"
+                            placeholder="Descreva brevemente seu projeto..." required></textarea>
+                        <!-- Campo de texto de múltiplas linhas -->
                     </div>
-                </div>
 
-                <!-- Área de texto para mensagem -->
-                <div class="formulario__grupo"> <!-- Agrupa label e campo de mensagem -->
-                    <label for="mensagem">MENSAGEM</label> <!-- Rótulo da área de texto -->
-                    <textarea id="mensagem" name="mensagem" rows="6" placeholder="Descreva brevemente seu projeto..."
-                        required></textarea> <!-- Campo de texto de múltiplas linhas -->
-                </div>
+                    <!-- Botão de envio -->
+                    <button type="submit" class="formulario__botao">ENVIAR SOLICITAÇÃO</button>
+                    <!-- Botão que envia os dados -->
 
-                <!-- Botão de envio -->
-                <button type="submit" class="formulario__botao">ENVIAR SOLICITAÇÃO</button>
-                <!-- Botão que envia os dados -->
-
-            </form>
+                </form>
+            </div>
         </section>
 
         <script src="frontend/components/header.js"></script>
