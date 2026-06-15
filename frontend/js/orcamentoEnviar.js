@@ -29,7 +29,7 @@ form.addEventListener("submit", async (e) => {
 
     try {
         const response = await fetch(
-            "https://projeto-integrador-nayara-e7tqtcptx-gustavopoetas-projects.vercel.app/api/send-email",
+            "https://projeto-integrador-nayara-api.vercel.app/api/send-email",
             {
                 method: "POST",
                 headers: {
