@@ -1,4 +1,4 @@
-<footer class="rodape">
+body.insertAdjacentHTML('beforeend', `<footer class="rodape">
   <div class="rodape__container">
     <div class="rodape__conteudo">
 
@@ -65,4 +65,4 @@
     </div>
 
   </div>
-</footer>
+</footer>`);
